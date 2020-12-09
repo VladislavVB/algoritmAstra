@@ -341,7 +341,67 @@ template {
   display: none;
 }
 
-h1 {
-  background-color: #000000;
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.menu {
+  background-color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.menu-logo img {
+  height: 50px;
+  width: 100%;
+}
+
+.menu-items {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.menu-item {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 17px;
+  font-size: 14px;
+  color: #555554;
+}
+
+.menu-item:hover {
+  background-color: #555554;
+  color: #ffffff;
+  border-bottom: 5px solid #8cbf19;
+  -webkit-box-shadow: 0px 5px 0px 0px #555554;
+          box-shadow: 0px 5px 0px 0px #555554;
+}
+
+.menu-number {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-number a {
+  color: #555554;
+  margin-left: 5px;
+  float: bottom;
 }
 /*# sourceMappingURL=style.css.map */
