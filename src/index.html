@@ -22,14 +22,14 @@
   <div class="menu">
     <div class="container">
       <div class="row align-items-center header-menu">
-        <a class="col-3 menu-logo"><img src="img/menu/logo.png" alt=""></a>
+        <a href="#start" class="col-3 menu-logo"><img src="img/menu/logo.png" alt=""></a>
         <div class="col-7 menu-items d-flex float-right">
-          <a href="" class="menu-item">Главная</a>
-          <a href="" class="menu-item">Наши проекты</a>
-          <a href="" class="menu-item">О нас</a>
+          <a href="#start" class="menu-item">Главная</a>
+          <a href="#kitchen" class="menu-item">Наши проекты</a>
+          <a href="#choose" class="menu-item">О нас</a>
           <a href="" class="menu-item">Дизайнерам</a>
           <a href="" class="menu-item">Отзывы</a>
-          <a href="" class="menu-item">Контакты</a>
+          <a href="#footer" class="menu-item">Контакты</a>
         </div>
         <div class="col-2 menu-number">
           <img src="img/menu/what.png" alt="">
@@ -40,7 +40,7 @@
   </div>
   <!-- конец меню -->
   <!-- начало header -->
-  <header class="header">
+  <header id="start" class="header">
     <div class="container">
       <div class="header-title">КУХНИ & ШКАФЫ</div>
 
@@ -198,7 +198,7 @@
   </section>
 
   <!-- начало choose -->
-  <section class="choose">
+  <section id="choose" class="choose">
     <div class="container">
       <div class="choose-content">
         <div class="choose-title title text-center">Почему люди выбирают нас?</div>
@@ -264,21 +264,21 @@
   </section>
   <!-- конец consultation -->
   <!-- начало kitchen -->
-  <section class="kitchen">
+  <section id="kitchen" class="kitchen">
     <div class="container">
       <div class="kitchen-content">
         <div class="kitchen-title title text-center">Наши проекты кухонь</div>
         <div class="kitchen-subtitle"><img class="kitchen-subtitle-img" src="img/choose/subtitle.png" alt=""></div>
         <div class="tabs-items text-center">
-          <a onclick="onKitchetClick(0, event)" href="#" class="tabs-item tabs-item-active">Современный стиль</a>
-          <a onclick="onKitchetClick(1, event)" href="#" class="tabs-item">Лофт</a>
-          <a onclick="onKitchetClick(2, event)" href="#" class="tabs-item">Неоклассика</a>
-          <a onclick="onKitchetClick(3, event)" href="#" class="tabs-item">Классика</a>
-          <a onclick="onKitchetClick(4, event)" href="#" class="tabs-item">Прованс</a>
+          <a onclick="onKitchetClick(0, event)"  class="tabs-item tabs-item-active">Современный стиль</a>
+          <a onclick="onKitchetClick(1, event)"  class="tabs-item">Лофт</a>
+          <a onclick="onKitchetClick(2, event)"  class="tabs-item">Неоклассика</a>
+          <a onclick="onKitchetClick(3, event)"  class="tabs-item">Классика</a>
+          <a onclick="onKitchetClick(4, event)"  class="tabs-item">Прованс</a>
         </div>
         <!-- 1 -->
         <div id="kitchen-firstH" class="row kitchen-tab kitchen-card-active">
-          <a onclick="openModal_1()" href="#" class="col-3">
+          <a onclick="openModal_1()"  class="col-3">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/1.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -300,7 +300,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_3()" href="#" class="col-3">
+          <a onclick="openModal_3()"  class="col-3">
             <div class="kitchen-card"><img  class="kitchen-img" src="img/kitchen-tabs/3.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -311,7 +311,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_4()" href="#" class="col-3">
+          <a onclick="openModal_4()"  class="col-3">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/4.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -322,7 +322,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_5()" href="#" class="col-3">
+          <a onclick="openModal_5()"  class="col-3">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/5.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -333,7 +333,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_6()" href="#" class="col-3">
+          <a onclick="openModal_6()"  class="col-3">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/6.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -344,7 +344,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_7()" href="#" class="col-3">
+          <a onclick="openModal_7()"  class="col-3">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/7.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -355,7 +355,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_8()" href="#" class="col-3">
+          <a onclick="openModal_8()"  class="col-3">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/8.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -484,13 +484,227 @@
     </div>
   </section>
   <!-- конец kitchen -->
-  <!-- начало order -->
+  <!-- начало cabinets -->
   <section class="cabinets">
-    <div class="container">
-
+    <div class="container"> 
+      <div class="cabinets-content">
+        <div class="cabinets-title title text-center">Наши проекты шкафов</div>
+        <div class="cabinets-subtitle"><img class="cabinets-subtitle-img" src="img/choose/subtitle.png" alt=""></div>
+        <div class="cabinets-items text-center">
+          <a onclick="onСabinetsClick(0, event)"  class="cabinets-item cabinets-item-active">Современный стиль</a>
+          <a onclick="onСabinetsClick(1, event)"  class="cabinets-item">Лофт</a>
+          <a onclick="onСabinetsClick(2, event)"  class="cabinets-item">Неоклассика</a>
+          <a onclick="onСabinetsClick(3, event)"  class="cabinets-item">Классика</a>
+          <a onclick="onСabinetsClick(4, event)"  class="cabinets-item">Прованс</a>
+        </div>
+        <!-- 1 -->
+        <div id="cabinets-firstH" class="row cabinets-tab cabinets-card-active">
+          <a onclick="openModal_1()"  class="col-3">
+            <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/1.png" alt="">
+              <div class="cabinets-card-plus">
+                <div class="cabinets-card-plus-content">
+                  <img src="img/kitchen-tabs/plus.png" alt="">
+                  <div class="cabinets-card-plus-text">скачать</div>
+                  <!-- если сделать а вместо  div все поедет  -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a onclick="openModal_2()" class="col-3">
+            <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/2.png" alt="">
+              <div class="cabinets-card-plus">
+                <div class="cabinets-card-plus-content">
+                  <img src="img/kitchen-tabs/plus.png" alt="">
+                  <div class="cabinets-card-plus-text">скачать</div>
+                  <!-- если сделать а вместо  div все поедет  -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a onclick="openModal_3()" class="col-3">
+            <div class="cabinets-card"><img  class="cabinets-img" src="img/kitchen-tabs/3.png" alt="">
+              <div class="cabinets-card-plus">
+                <div class="cabinets-card-plus-content">
+                  <img src="img/kitchen-tabs/plus.png" alt="">
+                  <div class="cabinets-card-plus-text">скачать</div>
+                  <!-- если сделать а вместо  div все поедет  -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a onclick="openModal_4()" class="col-3">
+            <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/4.png" alt="">
+              <div class="cabinets-card-plus">
+                <div class="cabinets-card-plus-content">
+                  <img src="img/kitchen-tabs/plus.png" alt="">
+                  <div class="cabinets-card-plus-text">скачать</div>
+                  <!-- если сделать а вместо  div все поедет  -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a onclick="openModal_5()" class="col-3">
+            <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/5.png" alt="">
+              <div class="cabinets-card-plus">
+                <div class="cabinets-card-plus-content">
+                  <img src="img/kitchen-tabs/plus.png" alt="">
+                  <div class="cabinets-card-plus-text">скачать</div>
+                  <!-- если сделать а вместо  div все поедет  -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a onclick="openModal_6()" class="col-3">
+            <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/6.png" alt="">
+              <div class="cabinets-card-plus">
+                <div class="cabinets-card-plus-content">
+                  <img src="img/kitchen-tabs/plus.png" alt="">
+                  <div class="cabinets-card-plus-text">скачать</div>
+                  <!-- если сделать а вместо  div все поедет  -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a onclick="openModal_7()" class="col-3">
+            <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/7.png" alt="">
+              <div class="cabinets-card-plus">
+                <div class="cabinets-card-plus-content">
+                  <img src="img/kitchen-tabs/plus.png" alt="">
+                  <div class="cabinets-card-plus-text">скачать</div>
+                  <!-- если сделать а вместо  div все поедет  -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a onclick="openModal_8()" class="col-3">
+            <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/8.png" alt="">
+              <div class="cabinets-card-plus">
+                <div class="cabinets-card-plus-content">
+                  <img src="img/kitchen-tabs/plus.png" alt="">
+                  <div class="cabinets-card-plus-text">скачать</div>
+                  <!-- если сделать а вместо  div все поедет  -->
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- 1 -->
+        <!-- 2 -->
+        <div id="cabinets-secondH" class="row cabinets-tab ">
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="img/kitchen-tabs/2.png" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+        </div>
+        <!-- 2 -->
+        <!-- 3 -->
+        <div id="cabinets-threeH" class="row cabinets-tab ">
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="img/kitchen-tabs/1.png" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="img/kitchen-tabs/3.png" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+        </div>
+        <!-- 3 -->
+        <!-- 4 -->
+        <div id="cabinets-fourH" class="row cabinets-tab ">
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="img/kitchen-tabs/4.png" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+        </div>
+        <!-- 4 -->
+        <!-- 5 -->
+        <div id="cabinets-fiveH" class="row cabinets-tab">
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="img/kitchen-tabs/5.png" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+          <a href="#" class="col-3">
+            <div class="cabinets-card"><img src="" alt=""></div>
+          </a>
+        </div>
+        <!-- 5 -->
+      </div>
     </div>
   </section>
-  <!-- конец kitchen -->
+  <!-- конец cabinets -->
   <!-- начало order -->
   <section class="order">
     <div class="container">
@@ -565,7 +779,7 @@
   </section>
   <!-- конец questions -->
   <!-- начало footer -->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="container">
       <div class="row footer-content">
         <div class="col-4">
@@ -701,6 +915,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/kitchen.js"></script>
+  <script src="js/cabinets.js"></script>
   <script src="js/slider.js"></script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
