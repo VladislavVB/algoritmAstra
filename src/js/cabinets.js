@@ -21,3 +21,9 @@ let onСabinetsClick = (index, event) => {
     document.querySelectorAll('.cabinets-item')[index].classList.add('cabinets-item-active');
     return false;
 }
+
+const buttomMobileMenu = document.querySelector('.btn_mobile');
+    const navigationMenu = document.querySelector('.menu-items');
+    buttomMobileMenu.addEventListener('click', () => {
+      navigationMenu.classList.toggle('active');
+})

@@ -21,9 +21,10 @@
   <!-- начало меню -->
   <div class="menu">
     <div class="container">
-      <div class="row align-items-center header-menu">
-        <a href="#start" class="col-3 menu-logo"><img src="img/menu/logo.png" alt=""></a>
-        <div class="col-7 menu-items d-flex float-right">
+      <div class="row justify-content-between align-items-center header-menu">
+        <a href="#start" class="desctop-logo col-5 col-sm-3 col-lg-3 menu-logo"><img src="img/menu/logo.png" alt=""></a>
+        <a href="#start" class="mobile-logo col-5 col-sm-3 col-lg-3 menu-logo"><img src="img/menu/logomb.png" alt=""></a>
+        <div class="col-sm-7 col-md-6 col-lg-7 menu-items d-flex float-right">
           <a href="#start" class="menu-item">Главная</a>
           <a href="#kitchen" class="menu-item">Наши проекты</a>
           <a href="#choose" class="menu-item">О нас</a>
@@ -31,10 +32,11 @@
           <a href="" class="menu-item">Отзывы</a>
           <a href="#footer" class="menu-item">Контакты</a>
         </div>
-        <div class="col-2 menu-number">
+        <a href="tel:89094703700" class="col-5 col-sm-3 col-md-3 col-lg-2 menu-number">
           <img src="img/menu/what.png" alt="">
-          <a href="tel:89094703700">8 909 470 37 00</a>
-        </div>
+          <div class="header-number">8 909 470 37 00</div>
+        </a>
+        <button class="col-1 btn_mobile d-sm-none d-inline-block "><img src="img/menu/menu.png" alt=""></button>
       </div>
     </div>
   </div>
@@ -42,7 +44,7 @@
   <!-- начало header -->
   <header id="start" class="header">
     <div class="container">
-      <div class="header-title">КУХНИ & ШКАФЫ</div>
+      <h1 class="header-title">КУХНИ & ШКАФЫ</h1>
 
     </div>
   </header>
@@ -57,34 +59,7 @@
           <div class="slide">
             <div class="container">
               <div class="row slide-content justify-content-between">
-                <div class="col-6">
-                  <div class="slide-text">
-                    <div class="slide-title">Живи сейчас и пользуйся новой кухней!</div>
-                    <div class="slide-description">Теперь не нужно копить на кухню, а взять ее в рассрочку <br> без
-                      переплат и скрытых платежей</div>
-                    <div class="slide-buttons">
-                      <button onclick="openModal()" class="button button-slide">Оставить заявку</button>
-                      <button onclick="openModal()" class="transparent-button">Узнать стоимость</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-5">
-                  <div class="text-sale">
-                    <div  class="sale-up">Рассрочка на кухни 0%</div>
-                    <div class="sale-title">ЭТО ВЫГОДНО!</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- слайд -->
-        </div>
-        <div class="swiper-slide swiper-slide-bg">
-          <!-- слайд -->
-          <div class="slide">
-            <div class="container">
-              <div class="row slide-content justify-content-between">
-                <div class="col-6">
+                <div class="col-sm-6">
                   <div class="slide-text">
                     <div class="slide-title">Живи сейчас и пользуйся новой кухней!</div>
                     <div class="slide-description">Теперь не нужно копить на кухню, а взять ее в рассрочку <br> без
@@ -95,7 +70,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-5">
+                <div class="col-sm-6 col-md-5">
                   <div class="text-sale">
                     <div class="sale-up">Рассрочка на кухни 0%</div>
                     <div class="sale-title">ЭТО ВЫГОДНО!</div>
@@ -111,7 +86,7 @@
           <div class="slide">
             <div class="container">
               <div class="row slide-content justify-content-between">
-                <div class="col-6">
+                <div class="col-sm-6">
                   <div class="slide-text">
                     <div class="slide-title">Живи сейчас и пользуйся новой кухней!</div>
                     <div class="slide-description">Теперь не нужно копить на кухню, а взять ее в рассрочку <br> без
@@ -122,7 +97,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-5">
+                <div class="col-sm-6 col-md-5">
                   <div class="text-sale">
                     <div class="sale-up">Рассрочка на кухни 0%</div>
                     <div class="sale-title">ЭТО ВЫГОДНО!</div>
@@ -138,7 +113,7 @@
           <div class="slide">
             <div class="container">
               <div class="row slide-content justify-content-between">
-                <div class="col-6">
+                <div class="col-sm-6">
                   <div class="slide-text">
                     <div class="slide-title">Живи сейчас и пользуйся новой кухней!</div>
                     <div class="slide-description">Теперь не нужно копить на кухню, а взять ее в рассрочку <br> без
@@ -149,7 +124,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-5">
+                <div class="col-sm-6 col-md-5">
                   <div class="text-sale">
                     <div class="sale-up">Рассрочка на кухни 0%</div>
                     <div class="sale-title">ЭТО ВЫГОДНО!</div>
@@ -165,7 +140,7 @@
           <div class="slide">
             <div class="container">
               <div class="row slide-content justify-content-between">
-                <div class="col-6">
+                <div class="col-sm-6">
                   <div class="slide-text">
                     <div class="slide-title">Живи сейчас и пользуйся новой кухней!</div>
                     <div class="slide-description">Теперь не нужно копить на кухню, а взять ее в рассрочку <br> без
@@ -176,7 +151,34 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-5">
+                <div class="col-sm-6 col-md-5">
+                  <div class="text-sale">
+                    <div class="sale-up">Рассрочка на кухни 0%</div>
+                    <div class="sale-title">ЭТО ВЫГОДНО!</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- слайд -->
+        </div>
+        <div class="swiper-slide swiper-slide-bg">
+          <!-- слайд -->
+          <div class="slide">
+            <div class="container">
+              <div class="row slide-content justify-content-between">
+                <div class="col-sm-6">
+                  <div class="slide-text">
+                    <div class="slide-title">Живи сейчас и пользуйся новой кухней!</div>
+                    <div class="slide-description">Теперь не нужно копить на кухню, а взять ее в рассрочку <br> без
+                      переплат и скрытых платежей</div>
+                    <div class="slide-buttons">
+                      <button class="button button-slide">Оставить заявку</button>
+                      <button class="transparent-button">Узнать стоимость</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-5">
                   <div class="text-sale">
                     <div class="sale-up">Рассрочка на кухни 0%</div>
                     <div class="sale-title">ЭТО ВЫГОДНО!</div>
@@ -204,22 +206,22 @@
         <div class="choose-title title text-center">Почему люди выбирают нас?</div>
         <div class="choose-subtitle"><img class="choose-subtitle-img" src="img/choose/subtitle.png" alt=""></div>
         <div class="row choose-cards ">
-          <div class="col-4">
+          <div class="col-sm-12 col-md-6 col-12">
             <div class="choose-card">
               <div class="choose-card-img"><img src="img/choose/card1.png" alt=""></div>
               <div class="choose-card-description">Большой опыт в реализации проектов любой сложности. С 2012 года
                 спроектировали более 1000 проектов мебели</div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="choose-card">
+          <div class="col-sm-12 col-md-6 col-12">
+            <div class="choose-card choose-card-sm">
               <div class="choose-card-img"><img src="img/choose/card2.png" alt=""></div>
               <div class="choose-card-description">Не тянем сроки. Делаем кухню за разумный, приемлемый срок и без
                 задержек</div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="choose-card">
+          <div class="col-sm-12 col-md-6 col-12">
+            <div class="choose-card choose-card-sm choose-card-adaptiv">
               <div class="choose-card-img"><img src="img/choose/card3.png" alt=""></div>
               <div class="choose-card-description">Делаем кухни за разумную стоимость. Наши цены не берутся из
                 "потолка", а каждый рубль расходуется на материалы и рабочую силу</div>
@@ -227,15 +229,15 @@
           </div>
         </div>
         <div class="row justify-content-center choose-cards-sub">
-          <div class="col-4">
+          <div class="col-sm-12 col-md-6 col-12">
             <div class="choose-card">
               <div class="choose-card-img"><img src="img/choose/card4.png" alt=""></div>
               <div class="choose-card-description">Рассрочка на очень выгодных условиях Без предоплаты и переплат,
                 сроком на 6, 12 и даже на 24 месяца</div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="choose-card">
+          <div class="col-sm-12 col-md-6 col-12">
+            <div class="choose-card choose-card-sm">
               <div class="choose-card-img"><img src="img/choose/card5.png" alt=""></div>
               <div class="choose-card-description">Экономим ваше время. В короткие сроки предоставим оптимальное решение
                 и исполним свои обязательства</div>
@@ -250,13 +252,13 @@
   <section class="consultation">
     <div class="container">
       <div class="row consultation-content">
-        <div class="col-7">
+        <div class="col-sm-7 col-12">
           <div class="consultation-description">
             Ваш заказ кухни превращается не в ад и потерю времени, а в хорошо проведенное время еоторое вы будите
             вспоминать с теплотой в душе еще много лет!
           </div>
         </div>
-        <div class="col-5">
+        <div class="col-sm-5 col-12  align-items-center">
           <button onclick="openModal()" class="button consultation-button">Получить бесплатную консультацию</button>
         </div>
       </div>
@@ -278,7 +280,7 @@
         </div>
         <!-- 1 -->
         <div id="kitchen-firstH" class="row kitchen-tab kitchen-card-active">
-          <a onclick="openModal_1()"  class="col-3">
+          <a onclick="openModal_1()"  class="col-sm-6 col-md-6 col-lg-3">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/1.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -289,7 +291,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_2()" class="col-3">
+          <a onclick="openModal_2()" class="col-sm-6 col-md-6 col-lg-3">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/2.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -300,7 +302,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_3()"  class="col-3">
+          <a onclick="openModal_3()"  class="col-sm-6 col-md-6 col-lg-3">
             <div class="kitchen-card"><img  class="kitchen-img" src="img/kitchen-tabs/3.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -311,7 +313,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_4()"  class="col-3">
+          <a onclick="openModal_4()"  class="col-sm-6 col-md-6 col-lg-3">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/4.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -322,7 +324,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_5()"  class="col-3">
+          <a onclick="openModal_5()"  class="col-sm-6 col-md-6 col-lg-3">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/5.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -333,7 +335,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_6()"  class="col-3">
+          <a onclick="openModal_6()"  class="col-sm-6 col-md-6 col-lg-3">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/6.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -344,7 +346,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_7()"  class="col-3">
+          <a onclick="openModal_7()"  class="col-sm-6 col-md-6 col-lg-3">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/7.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -355,7 +357,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_8()"  class="col-3">
+          <a onclick="openModal_8()"  class="col-sm-6 col-md-6 col-lg-3">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/8.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -499,7 +501,7 @@
         </div>
         <!-- 1 -->
         <div id="cabinets-firstH" class="row cabinets-tab cabinets-card-active">
-          <a onclick="openModal_1()"  class="col-3">
+          <a onclick="openModal_1()"  class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/1.png" alt="">
               <div class="cabinets-card-plus">
                 <div class="cabinets-card-plus-content">
@@ -510,7 +512,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_2()" class="col-3">
+          <a onclick="openModal_2()" class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/2.png" alt="">
               <div class="cabinets-card-plus">
                 <div class="cabinets-card-plus-content">
@@ -521,7 +523,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_3()" class="col-3">
+          <a onclick="openModal_3()" class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="cabinets-card"><img  class="cabinets-img" src="img/kitchen-tabs/3.png" alt="">
               <div class="cabinets-card-plus">
                 <div class="cabinets-card-plus-content">
@@ -532,7 +534,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_4()" class="col-3">
+          <a onclick="openModal_4()" class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/4.png" alt="">
               <div class="cabinets-card-plus">
                 <div class="cabinets-card-plus-content">
@@ -543,7 +545,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_5()" class="col-3">
+          <a onclick="openModal_5()" class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/5.png" alt="">
               <div class="cabinets-card-plus">
                 <div class="cabinets-card-plus-content">
@@ -554,7 +556,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_6()" class="col-3">
+          <a onclick="openModal_6()" class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/6.png" alt="">
               <div class="cabinets-card-plus">
                 <div class="cabinets-card-plus-content">
@@ -565,7 +567,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_7()" class="col-3">
+          <a onclick="openModal_7()" class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/7.png" alt="">
               <div class="cabinets-card-plus">
                 <div class="cabinets-card-plus-content">
@@ -576,7 +578,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_8()" class="col-3">
+          <a onclick="openModal_8()" class="col-12 col-sm-6 col-md-6 col-lg-3">
             <div class="cabinets-card"><img class="cabinets-img" src="img/kitchen-tabs/8.png" alt="">
               <div class="cabinets-card-plus">
                 <div class="cabinets-card-plus-content">
@@ -712,7 +714,7 @@
         <div class="order-title title text-center">Как сделать заказ?</div>
         <div class="order-subtitle"><img class="order-subtitle-img" src="img/order/subtitle.png" alt=""></div>
         <div class="row order-cards">
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="order-card order-card-bg-one">
               <div class="order-card-title">Оставьте заявку</div>
               <div class="order-card-description">Вы можете оставить заявку на сайте или позвонить нам по телефону
@@ -720,28 +722,28 @@
               <a onclick="openModal()" class="order-request" href="#">Оставить заявку</a>
             </div>
           </div>
-          <div class="col-4">
-            <div class="order-card order-card-bg-two">
+          <div class="col-md-4">
+            <div class="order-card order-card-adaptiv order-card-bg-two">
               <div class="order-card-title">Технолог выезжает на замер</div>
               <div class="order-card-description">Наш специалист приедет и сделает необходимые замеры для создания
                 дизайн-проекта вашей будущей мебели</div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="order-card order-card-bg-three">
               <div class="order-card-title">Обсуждаем дизайн-проект, стоимость и сроки</div>
               <div class="order-card-description">На этом этапе мы обсуждаем цену и сроки, которые дальше не меняются
               </div>
             </div>
           </div>
-          <div class="col-8">
+          <div class="col-md-8">
             <div class="order-card order-card-sub order-card-bg-four">
               <div class="order-card-title">Подписываем договор и запускаем проект в производство</div>
               <div class="order-card-description">Производство находится в городе Краснодар, поэтому вы всегда можете
                 иметь непосредственный контроль над процессом, качеством и сроками</div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div class="order-card order-card-sub order-card-bg-five">
               <div class="order-card-title">Доставка и сборка</div>
               <div class="order-card-description">Доставка мебели с разгрузкой на адресе. Установка мебели в
@@ -757,7 +759,7 @@
   <section class="questions">
     <div class="container">
       <div class="row justify-content-between questions-content">
-        <div class="col-7">
+        <div class="col-12 col-md-7 col-sm-12">
           <div class="questions-text">
             <div class="questions-title">Остались вопросы?</div>
             <div class="questions-title questions-title-sub">Получите подробную консультацию бесплатно!</div>
@@ -765,7 +767,7 @@
               время</div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-5 col-lg-4">
           <div class="questions-form">
             <form class="form" action="#">
               <input class="input input-name" placeholder="имя" type="text">
@@ -778,15 +780,28 @@
     </div>
   </section>
   <!-- конец questions -->
+  <!-- начало map -->
+  <section class="map">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="map-content">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- конец map -->
   <!-- начало footer -->
   <footer id="footer" class="footer">
     <div class="container">
-      <div class="row footer-content">
-        <div class="col-4">
+      <div class="row justify-content-between footer-content">
+        <div class="col-md-6 col-lg-4">
           <div class="footer-title">Реквизиты:</div>
           <div class="footer-description">ИП Шалакина Анна Викторовна<br>Инн 231295473101 <br>ОГРН 313231230500079</div>
         </div>
-        <div class="col-4">
+        <div class="col-md-5 col-lg-4">
           <div class="footer-title">Наши партнеры:</div>
           <div class="footer-description-img">
             <div class="d-flex align-items-center justify-content-between">
@@ -806,7 +821,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-6 col-lg-4">
           <div class="footer-title">Мы в соцсетях:</div>
           <div class="footer-description-img">
             <a href="#"><img src="img/footer/vk.png" alt=""></a>
@@ -820,8 +835,12 @@
         </div>
       </div>
       <div class="row justify-content-between footer-sub">
-        <div class="col-4 footer-sub-copy">Ⓒ Салон мебели "Astra"2014-2020</div>
-        <a class="col-4 footer-sub-confed">политика конфденциальности</a>
+        <div class=" col-md-6">
+          <div class="footer-sub-copy">Ⓒ Салон мебели "Astra"2014-2020</div>
+        </div>
+        <a class=" col-md-5">
+          <div class="footer-sub-confed">политика конфденциальности</div>
+        </a>
       </div>
     </div>
   </footer>
