@@ -14,6 +14,16 @@ let closeModal = () => {
     
 }
 
+let closeModalBlack = (event) => {
+    console.log(event.target.classList);
+    if(event.target.classList.value.indexOf('form-element') != -1){
+        return;
+    }
+    
+    
+    document.querySelector('.modal-body').classList.remove('modal-body-active');
+}
+
 //плавный переход
 const anchors = document.querySelectorAll('a[href*="#"]')
 

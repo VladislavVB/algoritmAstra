@@ -39,7 +39,13 @@ let closeModal_1 = () => {
     document.querySelector('.modal-img-first').classList.remove('modal-img-one-visible');
     
 }
-
+let closeModalBlack_1 = (event) => {
+    if(event.target.classList.value.indexOf('modal-img-one-content') != -1){
+        return;
+    }
+    
+    document.querySelector('.modal-img-first').classList.remove('modal-img-one-visible');
+}
 // let closeModalBlack_1 = () => {
 //     document.querySelector('.modal-img-one').classList.remove('modal-img-one-visible');
     
@@ -52,7 +58,13 @@ let closeModal_2 = () => {
     document.querySelector('.modal-img-two').classList.remove('modal-img-one-visible');
     
 }
-
+let closeModalBlack_2 = (event) => {
+    if(event.target.classList.value.indexOf('modal-img-one-content') != -1){
+        return;
+    }
+    
+    document.querySelector('.modal-img-two').classList.remove('modal-img-one-visible');
+}
 // let closeModalBlack_2 = () => {
 //     document.querySelector('.modal-img-two').classList.remove('modal-img-one-visible');
     
@@ -66,7 +78,13 @@ let closeModal_3 = () => {
     document.querySelector('.modal-img-three').classList.remove('modal-img-one-visible');
     
 }
-
+let closeModalBlack_3 = (event) => {
+    if(event.target.classList.value.indexOf('modal-img-one-content') != -1){
+        return;
+    }
+    
+    document.querySelector('.modal-img-three').classList.remove('modal-img-one-visible');
+}
 // let closeModalBlack_3 = () => {
 //     document.querySelector('.modal-img-three').classList.remove('modal-img-one-visible');
     
@@ -80,7 +98,13 @@ let closeModal_4 = () => {
     document.querySelector('.modal-img-four').classList.remove('modal-img-one-visible');
     
 }
-
+let closeModalBlack_4 = (event) => {
+    if(event.target.classList.value.indexOf('modal-img-one-content') != -1){
+        return;
+    }
+    
+    document.querySelector('.modal-img-four').classList.remove('modal-img-one-visible');
+}
 // let closeModalBlack_4 = () => {
 //     document.querySelector('.modal-img-four').classList.remove('modal-img-one-visible');
     
@@ -94,7 +118,13 @@ let closeModal_5 = () => {
     document.querySelector('.modal-img-five').classList.remove('modal-img-one-visible');
     
 }
-
+let closeModalBlack_5 = (event) => {
+    if(event.target.classList.value.indexOf('modal-img-one-content') != -1){
+        return;
+    }
+    
+    document.querySelector('.modal-img-five').classList.remove('modal-img-one-visible');
+}
 // let closeModalBlack_5 = () => {
 //     document.querySelector('.modal-img-five').classList.remove('modal-img-one-visible');
     
@@ -108,7 +138,13 @@ let closeModal_6 = () => {
     document.querySelector('.modal-img-six').classList.remove('modal-img-one-visible');
     
 }
-
+let closeModalBlack_6 = (event) => {
+    if(event.target.classList.value.indexOf('modal-img-one-content') != -1){
+        return;
+    }
+    
+    document.querySelector('.modal-img-six').classList.remove('modal-img-one-visible');
+}
 // let closeModalBlack_6 = () => {
 //     document.querySelector('.modal-img-six').classList.remove('modal-img-one-visible');
     
@@ -122,11 +158,13 @@ let closeModal_7 = () => {
     document.querySelector('.modal-img-seven').classList.remove('modal-img-one-visible');
     
 }
-
-// let closeModalBlack_7 = () => {
-//     document.querySelector('.modal-img-seven').classList.remove('modal-img-one-visible');
+let closeModalBlack_7 = (event) => {
+    if(event.target.classList.value.indexOf('modal-img-one-content') != -1){
+        return;
+    }
     
-// }
+    document.querySelector('.modal-img-seven').classList.remove('modal-img-one-visible');
+}
 
 let openModal_8 = () => {
     document.querySelector('.modal-img-eight').classList.add('modal-img-one-visible');
@@ -137,9 +175,12 @@ let closeModal_8 = () => {
     
 }
 
-// let closeModalBlack_8 = () => {
-//     document.querySelector('.modal-img-eight').classList.remove('modal-img-one-visible');
+let closeModalBlack_8 = (event) => {
+    if(event.target.classList.value.indexOf('modal-img-one-content') != -1){
+        return;
+    }
     
-// }
+    document.querySelector('.modal-img-eight').classList.remove('modal-img-one-visible');
+}
 
 
