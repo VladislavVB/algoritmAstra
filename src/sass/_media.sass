@@ -29,13 +29,28 @@
     .mobile-logo
         display: none
 @media screen and ( max-width: 992px )
-    .menu-items
-        display: flex
-        flex-wrap: wrap
     .menu-item
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 20px 17px
+        font-size: 14px
+        color: $gray 
+        transition: 0.5s
         height: 20px
         padding: 2px 8px
         font-size: 14px
+        &:hover
+            transition: 0.5s
+            background-color: $gray
+            color: $white
+            border-bottom: 2px solid $green
+            box-shadow: 0px 5px 0px 0px rgba(85, 85, 84, 1)
+    .menu-items
+        display: flex
+        flex-wrap: wrap
+
+        
     .menu-logo img
         margin-bottom: -5px
         height: 55px
@@ -127,6 +142,11 @@
         background-color: #0000003f
         &:hover
             border: 2px solid $green
+    .text-sale 
+        margin-top: 17px
+        max-width: 240px 
+    .sale-up
+        min-width: 240px
     .kitchen-card
         width: 255px
         margin: auto
@@ -188,5 +208,6 @@
             background-color: $gray
             color: $white
             box-shadow: 0px 0px 0px 0px #55555400
-
+    .order-card
+        min-height: 150px
             

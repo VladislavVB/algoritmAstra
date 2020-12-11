@@ -22,8 +22,3 @@ let onСabinetsClick = (index, event) => {
     return false;
 }
 
-const buttomMobileMenu = document.querySelector('.btn_mobile');
-    const navigationMenu = document.querySelector('.menu-items');
-    buttomMobileMenu.addEventListener('click', () => {
-      navigationMenu.classList.toggle('active');
-})

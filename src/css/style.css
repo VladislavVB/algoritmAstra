@@ -348,6 +348,8 @@ a {
 a:hover {
   cursor: pointer;
   text-decoration: none;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
+          filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
 }
 
 button:focus {
@@ -375,6 +377,8 @@ button:focus {
   border: none;
   outline-style: none;
   cursor: pointer;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
+          filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
 }
 
 .title {
@@ -1393,17 +1397,40 @@ button:focus {
 }
 
 @media screen and (max-width: 992px) {
+  .menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 17px;
+    font-size: 14px;
+    color: #555554;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    height: 20px;
+    padding: 2px 8px;
+    font-size: 14px;
+  }
+  .menu-item:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #555554;
+    color: #ffffff;
+    border-bottom: 2px solid #8cbf19;
+    -webkit-box-shadow: 0px 5px 0px 0px #555554;
+            box-shadow: 0px 5px 0px 0px #555554;
+  }
   .menu-items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .menu-item {
-    height: 20px;
-    padding: 2px 8px;
-    font-size: 14px;
   }
   .menu-logo img {
     margin-bottom: -5px;
@@ -1531,6 +1558,13 @@ button:focus {
   .transparent-button:hover {
     border: 2px solid #8cbf19;
   }
+  .text-sale {
+    margin-top: 17px;
+    max-width: 240px;
+  }
+  .sale-up {
+    min-width: 240px;
+  }
   .kitchen-card {
     width: 255px;
     margin: auto;
@@ -1614,6 +1648,9 @@ button:focus {
     color: #ffffff;
     -webkit-box-shadow: 0px 0px 0px 0px #55555400;
             box-shadow: 0px 0px 0px 0px #55555400;
+  }
+  .order-card {
+    min-height: 150px;
   }
 }
 /*# sourceMappingURL=style.css.map */

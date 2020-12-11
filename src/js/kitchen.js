@@ -21,15 +21,7 @@ let onKitchetClick = (index, event) => {
     document.querySelectorAll('.tabs-item')[index].classList.add('tabs-item-active');
     return false;
 }
-//открытие модалки
-let openModal = () => {
-    document.querySelector('.modal-body ').classList.add('modal-body-active');
-}
 
-let closeModal = () => {
-    document.querySelector('.modal-body ').classList.remove('modal-body-active');
-    
-}
 
 // let closeModalBlack = () => {
 //     document.querySelector('.modal-body ').classList.remove('modal-img-one-visible');
@@ -151,18 +143,3 @@ let closeModal_8 = () => {
 // }
 
 
-//плавный переход
-const anchors = document.querySelectorAll('a[href*="#"]')
-
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = anchor.getAttribute('href').substr(1)
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
-}
