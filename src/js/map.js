@@ -1,69 +1,54 @@
 ymaps.ready(function () {
-    var map = new ymaps.Map('map', {
-        center: [55.7, 37.6],
-        zoom: 10,
-        controls: []
-    });
-
-    // Создание метки с квадратной активной областью.
-    var squareLayout = ymaps.templateLayoutFactory.createClass('<div class="placemark_layout_container"><div class="square_layout">$</div></div>');
-
-    var squarePlacemark = new ymaps.Placemark(
-        [55.725118, 37.682145], {
-            hintContent: 'Метка с прямоугольным HTML макетом'
+    var myMap = new ymaps.Map('map', {
+            center: [45.041031, 38.966581],
+            zoom: 16
         }, {
-            iconLayout: squareLayout,
-            // Описываем фигуру активной области "Прямоугольник".
-            iconShape: {
-                type: 'Rectangle',
-                // Прямоугольник описывается в виде двух точек - верхней левой и нижней правой.
-                coordinates: [
-                    [-25, -25], [25, 25]
-                ]
-            }
-        }
-    );
-    map.geoObjects.add(squarePlacemark);
+            searchControlProvider: 'yandex#search'
+        }),
 
-    // Создание метки с круглой активной областью.
-    var circleLayout = ymaps.templateLayoutFactory.createClass('<div class="placemark_layout_container"><div class="circle_layout">#</div></div>');
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
 
-    var circlePlacemark = new ymaps.Placemark(
-        [55.783202, 37.605584], {
-            hintContent: 'Метка с круглым HTML макетом'
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Улица ...',
+            balloonContent: 'Вход со стороны ...'
         }, {
-            iconLayout: circleLayout,
-            // Описываем фигуру активной области "Круг".
-            iconShape: {
-                type: 'Circle',
-                // Круг описывается в виде центра и радиуса
-                coordinates: [0, 0],
-                radius: 25
-            }
-        }
-    );
-    map.geoObjects.add(circlePlacemark);
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/kitchen-tabs/close1.png',
+            // Размеры метки.
+            iconImageSize: [42, 42],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -38]
+        }),
 
-    // Создание метки со сложной фигурой активной области.
-    var polygonLayout = ymaps.templateLayoutFactory.createClass('<div class="placemark_layout_container"><div class="polygon_layout">!</div></div>');
-
-    var polygonPlacemark = new ymaps.Placemark(
-        [55.662693, 37.558416], {
-            hintContent: 'HTML метка сложной формы'
+        myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
+            hintContent: 'Улица ...',
+            balloonContent: 'Вход со стороны ...',
+            iconContent: '12'
         }, {
-            iconLayout: polygonLayout,
-            // Описываем фигуру активной области "Полигон".
-            iconShape: {   
-                type: 'Polygon',
-                // Полигон описывается в виде трехмерного массива. Массив верхнего уровня содержит контуры полигона. 
-                // Первый элемента массива - это внешний контур, а остальные - внутренние.
-                coordinates: [
-                    // Описание внешнего контура полигона в виде массива координат.
-                    [[-28,-76],[28,-76],[28,-20],[12,-20],[0,-4],[-12,-20],[-28,-20]]
-                    // , ... Описание внутренних контуров - пустых областей внутри внешнего.
-                ]
-            }
-        }
-    );
-    map.geoObjects.add(polygonPlacemark);
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: 'images/ball.png',
+            // Размеры метки.
+            iconImageSize: [48, 48],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-24, -24],
+            // Смещение слоя с содержимым относительно слоя с картинкой.
+            iconContentOffset: [15, 15],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });
+
+    myMap.geoObjects
+        .add(myPlacemark)
+        .add(myPlacemarkWithContent);
 });
