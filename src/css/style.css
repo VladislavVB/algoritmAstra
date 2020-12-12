@@ -463,29 +463,37 @@ button:focus {
 }
 
 .calculation {
-  position: absolute;
-  height: 230px;
-  width: 50px;
+  position: fixed;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
   background-color: #576374;
   z-index: 900;
-  right: 0;
-  top: 6%;
+  right: -94px;
+  top: 20%;
+}
+
+.calculation-content {
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .calculation-content img {
-  margin-top: 30px;
-  margin-left: 11px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-right: 20px;
 }
 
 .calculation-content-text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  margin-left: 11px;
   color: #ffffff;
-  height: 142px;
-  width: 171px;
 }
 
 .swiper-container {
@@ -752,7 +760,6 @@ button:focus {
 
 .tabs-items {
   margin-top: 15px;
-  margin-bottom: -10px;
 }
 
 .tabs-item {
@@ -931,7 +938,6 @@ button:focus {
 
 .cabinets-items {
   margin-top: 15px;
-  margin-bottom: -10px;
 }
 
 .cabinets-item {
@@ -1418,6 +1424,9 @@ button:focus {
     width: 285px;
     height: 276px;
   }
+  .choose-card-description {
+    font-size: 14px;
+  }
   .desctop-logo {
     display: block;
   }
@@ -1486,7 +1495,7 @@ button:focus {
   }
   .choose-card {
     width: 340px;
-    height: 286px;
+    height: 246px;
   }
   .choose-card-adaptiv {
     margin-top: 30px;
@@ -1510,6 +1519,9 @@ button:focus {
 }
 
 @media screen and (max-width: 768px) {
+  .calculation {
+    top: 15%;
+  }
   .menu-logo img {
     height: 50px;
     width: 115%;

@@ -1,7 +1,7 @@
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-            center: [45.041031, 38.966581],
-            zoom: 16
+            center: [45.040222, 38.967075],
+            zoom: 17
         }, {
             searchControlProvider: 'yandex#search'
         }),
@@ -12,24 +12,24 @@ ymaps.ready(function () {
         ),
 
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Улица ...',
-            balloonContent: 'Вход со стороны ...'
+            hintContent: 'улица Фрунзе, 186/1',
+            balloonContent: 'Вход с улицы Фрунзе'
         }, {
             // Опции.
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: 'img/kitchen-tabs/close1.png',
+            iconImageHref: 'img/map/mapmarker.png',
             // Размеры метки.
-            iconImageSize: [42, 42],
+            iconImageSize: [42, 46],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
-            iconImageOffset: [-5, -38]
+            iconImageOffset: [-25, -28]
         }),
 
         myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-            hintContent: 'Улица ...',
-            balloonContent: 'Вход со стороны ...',
+            hintContent: 'улица Фрунзе, 186/1',
+            balloonContent: 'Вход с улицы Фрунзе',
             iconContent: '12'
         }, {
             // Опции.
