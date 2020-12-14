@@ -469,7 +469,7 @@ button:focus {
   background-color: #576374;
   z-index: 900;
   right: -94px;
-  top: 20%;
+  top: 46%;
 }
 
 .calculation-content {
@@ -679,10 +679,11 @@ button:focus {
   font-size: 16px;
   line-height: 1.3;
   background: #f9f9f9 url("../img/choose/card-choose-bg.png") center center no-repeat;
+  background-size: cover;
   -webkit-box-shadow: 0px 0px 46px 0px rgba(25, 34, 54, 0.11);
           box-shadow: 0px 0px 46px 0px rgba(25, 34, 54, 0.11);
   width: 360px;
-  height: 286px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,19 +787,28 @@ button:focus {
   background-color: #576374;
 }
 
+.kitchen-tab a {
+  margin-top: 30px;
+}
+
 .kitchen-tab {
   display: none;
 }
 
 .kitchen-card-plus {
   opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+  height: 100%;
+  width: 100%;
 }
 
 .kitchen-card {
   height: 154px;
   width: 100%;
   background-color: #555554;
-  margin-top: 30px;
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -818,7 +828,10 @@ button:focus {
   background-color: #000000c4;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 0%;
+  left: 0%;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
 }
 
 .kitchen-img {
@@ -834,6 +847,7 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .kitchen-card-plus-content img {
@@ -964,19 +978,28 @@ button:focus {
   background-color: #576374;
 }
 
+.cabinets-tab a {
+  margin-top: 30px;
+}
+
 .cabinets-tab {
   display: none;
 }
 
 .cabinets-card-plus {
   opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+  height: 100%;
+  width: 100%;
 }
 
 .cabinets-card {
   height: 154px;
   width: 100%;
   background-color: #555554;
-  margin-top: 30px;
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -996,7 +1019,10 @@ button:focus {
   background-color: #000000c4;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 0%;
+  left: 0%;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
 }
 
 .cabinets-img {
@@ -1422,7 +1448,6 @@ button:focus {
   }
   .choose-card {
     width: 285px;
-    height: 276px;
   }
   .choose-card-description {
     font-size: 14px;
@@ -1495,7 +1520,9 @@ button:focus {
   }
   .choose-card {
     width: 340px;
-    height: 246px;
+  }
+  .choose-cards-sub {
+    margin-top: 60px;
   }
   .choose-card-adaptiv {
     margin-top: 30px;
@@ -1519,8 +1546,8 @@ button:focus {
 }
 
 @media screen and (max-width: 768px) {
-  .calculation {
-    top: 15%;
+  .choose-top-adaptiv {
+    margin-top: 30px;
   }
   .menu-logo img {
     height: 50px;

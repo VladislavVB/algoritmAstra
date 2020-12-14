@@ -50,15 +50,23 @@
 .cabinets-item-active
     color: $white !important
     background-color: rgb(87, 99, 116)
-.cabinets-tab
+.cabinets-tab a
+    margin-top: 30px
+.cabinets-tab 
     display: none
 .cabinets-card-plus
+    
     opacity: 0
+    top: 50%
+    left: 50%
+    transform: translate(0% ,-100%)
+    height: 100%
+    width: 100%
 .cabinets-card
     height: 154px
     width: 100%
     background-color: $gray
-    margin-top: 30px
+    
     position: relative
     transition: 0.5s
     &:hover .cabinets-card-plus
@@ -70,7 +78,9 @@
         background-color: #000000c4
         width: 100%
         height: 100%
-        top: 0
+        top: 0%
+        left: 0%
+        transform: translate(0% ,0%)
         
 .cabinets-img
     height: 100%
