@@ -700,7 +700,7 @@ button:focus {
 }
 
 .choose-card-description {
-  margin-left: 16px;
+  padding: 15px;
   color: #101010;
 }
 
