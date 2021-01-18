@@ -431,17 +431,32 @@ button:focus {
 
 .menu {
   position: fixed;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   width: 100%;
   z-index: 10;
 }
 
+.menu-sochial {
+  margin-right: 30px;
+}
+
+.menu-sochial a {
+  margin-right: 10px;
+}
+
 .menu-logo img {
   margin-bottom: -5px;
   height: 55px;
-  width: 100%;
+  width: 293px;
+  margin-left: 30px;
+}
+
+.menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .menu-item {
@@ -474,7 +489,6 @@ button:focus {
 }
 
 .menu-number {
-  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,12 +507,26 @@ button:focus {
   padding-top: 55px;
 }
 
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .header-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #555554;
   margin-left: 100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .slide {
@@ -1569,6 +1597,7 @@ button:focus {
   font-size: 16px;
   font-weight: 500;
   color: #808080 !important;
+  text-decoration: underline;
 }
 
 .modal-img-one {
