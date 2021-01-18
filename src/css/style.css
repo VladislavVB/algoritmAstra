@@ -381,10 +381,52 @@ button:focus {
           filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
 }
 
-.title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 31px;
+.section-title {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.section-subtitle {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2a2a2a;
+  text-align: center;
+}
+
+.section-icon {
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  max-width: 300px;
+  margin: auto;
+}
+
+.section-icon::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #c9c9c9;
+  left: 5px;
+  top: 15px;
+}
+
+.section-icon::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #c9c9c9;
+  right: 5px;
+  top: 15px;
+}
+
+.col-20 {
+  width: 20%;
 }
 
 .menu {
@@ -603,6 +645,115 @@ button:focus {
 
 .swiper-slide-bg {
   background: url("../img/slider/slide-item.png") center;
+}
+
+.advantages-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.advantages-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+.advantages-card-img {
+  text-align: center;
+}
+
+.advantages-card-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 25px;
+  height: 100%;
+}
+
+.advantages-card-text {
+  margin-top: 5px;
+}
+
+.advantages-application {
+  margin-top: 100px;
+  padding: 50px 30px;
+  padding-bottom: 27px;
+  background: url(../img/advantages/application.png);
+  position: relative;
+}
+
+.advantages-application-img {
+  position: absolute;
+  top: -50px;
+  right: -30px;
+}
+
+.advantages-application-title {
+  font-size: 30px;
+  color: #dddfe2;
+  margin-bottom: 30px;
+}
+
+.advantages-application ul {
+  padding-left: 20px;
+}
+
+.advantages-application li {
+  color: #dddfe2;
+}
+
+.advantages-application-form {
+  margin-top: 40px;
+  max-width: 905px;
+}
+
+.advantages-application-form-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages-application-form-wraper input {
+  margin-right: 10px;
+  width: 289px;
+  height: 54px;
+  border-radius: 27px;
+  border: none;
+  background-color: #acbdcd;
+  padding-left: 25px;
+  padding-bottom: 4px;
+}
+
+.advantages-application-form-wraper button {
+  width: 307px;
+  height: 54px;
+  border-radius: 27px;
+  border: none;
+  background-color: #6fbf00;
+  color: #dddfe2;
+  font-size: 16px;
+  padding-bottom: 2px;
+}
+
+.advantages-application-form-policy {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #dddfe2;
+  text-align: center;
+}
+
+.advantages-application-form-policy a {
+  color: #8cbf19;
 }
 
 .choose {
@@ -1072,13 +1223,140 @@ button:focus {
   display: flex;
 }
 
-.order {
-  padding-top: 71px;
-  padding-bottom: 78px;
-  background: #f2b741 url("../img/order/order-bg.png") center center no-repeat;
+.reviews {
+  padding-top: 160px;
+}
+
+.reviews-content {
+  background: url(../img/advantages/application.png);
+  padding-top: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 65px;
+  position: relative;
+}
+
+.reviews-content img {
+  position: absolute;
+  top: -120px;
+  left: 30%;
+}
+
+.reviews-title {
+  text-align: center;
+  font-size: 30px;
+  color: #dddfe2;
+  max-width: 760px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.reviews-form {
+  max-width: 914px;
+  margin: auto;
+}
+
+.reviews-form input {
+  margin-right: 10px;
+  width: 289px;
+  height: 54px;
+  border-radius: 27px;
+  border: none;
+  background-color: #acbdcd;
+  padding-left: 25px;
+  padding-bottom: 4px;
+}
+
+.reviews-form button {
+  width: 307px;
+  height: 54px;
+  border-radius: 27px;
+  border: none;
+  background-color: #6fbf00;
+  color: #dddfe2;
+  font-size: 16px;
+  padding-bottom: 2px;
+}
+
+.reviews-policy {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #dddfe2;
+  text-align: center;
+}
+
+.reviews-policy a {
+  color: #8cbf19;
+}
+
+.reviews-slider-form {
+  background: url(../img/advantages/application.png);
+  padding-top: 22px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+
+.reviews-slider-form button {
+  width: 307px;
+  height: 54px;
+  border-radius: 27px;
+  border: none;
+  background-color: #6fbf00;
+  color: #dddfe2;
+  font-size: 16px;
+  padding-bottom: 2px;
+}
+
+.reviews-slider-form-text {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #dddfe2;
 }
 
 .order-content {
+  margin-top: 50px;
+}
+
+.order-card img {
+  width: 100%;
+}
+
+.order-card-two-img {
+  width: 12%;
+  font-size: 42px;
+  color: #f2f2f2;
+  text-align: right;
+}
+
+.order-card-two-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 17px;
+}
+
+.order-card-two-description {
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.order-card-two-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.order-card-two-text {
+  font-size: 14px;
+  color: #686868;
+  line-height: 18px;
+}
+
+.order-card-form {
+  background: url(../img/order/card3.png);
+  padding: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1091,104 +1369,61 @@ button:focus {
           flex-direction: column;
 }
 
-.order-title {
-  margin-bottom: 10px;
+.order-card-form-title {
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
 }
 
-.order-subtitle {
+.order-card-form form input {
+  width: 100%;
+  height: 54px;
+  padding-left: 25px;
+  padding-bottom: 5px;
+  border: none;
+  border-radius: 27px;
+  background-color: #acbdcd;
+  margin-bottom: 25px;
+}
+
+.order-card-form form button {
+  width: 100%;
+  height: 54px;
+  border: none;
+  border-radius: 27px;
+  background-color: #6fbf00;
+  color: #dddfe2;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.order-card-form a {
+  font-size: 24px;
+  color: #dddfe2;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  margin: auto;
-  max-width: 290px;
-  margin-bottom: 60px;
-}
-
-.order-subtitle::before {
-  content: '';
-  position: absolute;
-  background-color: #f2dea0;
-  height: 3px;
-  width: 100px;
-  left: -125px;
-  top: 3px;
-}
-
-.order-subtitle::after {
-  content: '';
-  position: absolute;
-  background-color: #f2dea0;
-  height: 3px;
-  width: 100px;
-  left: 55px;
-  top: 3px;
-}
-
-.order-card-bg-one {
-  background: url("../img/order/one.png") 92% 85% no-repeat;
-}
-
-.order-card-bg-two {
-  background: url("../img/order/two.png") 94% 85% no-repeat;
-}
-
-.order-card-bg-three {
-  background: url("../img/order/three.png") 94% 85% no-repeat;
-}
-
-.order-card-bg-four {
-  background: url("../img/order/four.png") 97.5% 85% no-repeat;
-}
-
-.order-card-bg-five {
-  background: url("../img/order/five.png") 94% 85% no-repeat;
-}
-
-.order-card {
-  background-color: #f2dfa1;
-  padding: 13px 16px;
-  min-height: 150px;
-}
-
-.order-card-sub {
-  margin-top: 30px;
-}
-
-.order-card-title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: #be5400;
-  font-size: 16px;
-}
-
-.order-card-description {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 5px;
-  min-height: 73px;
 }
 
-.order-request {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+.order-card-form-policy {
+  text-align: center;
+  color: #dddfe2;
   font-size: 16px;
-  color: #8bbe1f;
-  margin-bottom: 1px;
-  border-bottom: 1px solid #8bbe1f;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  max-width: 300px;
+  display: inline;
+  margin: auto;
 }
 
-.order-request:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  border-bottom: 1px solid transparent;
-  color: #8bbe1f;
+.order-card-form-policy a {
+  color: #6fbf00;
+  font-size: 16px;
+  text-align: center;
+  margin: auto;
 }
 
 .questions {

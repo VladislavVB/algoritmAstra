@@ -1,75 +1,76 @@
 .order
-    padding-top: 71px
-    padding-bottom: 78px
-    background: $orderbg url('../img/order/order-bg.png') center center no-repeat
-.order-content
-    display: flex
-    justify-content: center
-    flex-direction:: column
-.order-title
-    
-    margin-bottom: 10px
-.order-subtitle
-    display: flex
-    justify-content: center
-    position: relative
-    margin: auto
-    max-width: 290px
-    margin-bottom: 60px
-    &::before
-        content: ''
-        position: absolute
-        background-color: $order
-        height: 3px
-        width: 100px
-        left: -125px
-        top: 3px
-    &::after
-        content: ''
-        position: absolute
-        background-color: $order
-        height: 3px
-        width: 100px
-        left: 55px
-        top: 3px
-.order-card-bg
-    &-one
-        background: url('../img/order/one.png') 92% 85% no-repeat
-    &-two
-        background: url('../img/order/two.png') 94% 85% no-repeat
-    &-three
-        background: url('../img/order/three.png') 94% 85% no-repeat
-    &-four
-        background: url('../img/order/four.png') 97.5% 85% no-repeat
-    &-five
-        background: url('../img/order/five.png') 94% 85% no-repeat
-.order-card
-    background-color: $ordercard
-    padding: 13px 16px
-    min-height: 150px
-.order-card-sub
-    margin-top: 30px
-
-.order-card-title
-    font-family: 'Montserrat', sans-serif
-    font-weight: 700
-    color: $ordercardtitle
-    font-size: 16px
-.order-card-description
-    font-family: 'Montserrat', sans-serif
-    font-weight: 500
-    font-size: 16px
-    margin-top: 5px
-    min-height: 73px
-.order-request
-    font-family: 'Montserrat', sans-serif
-    font-weight: 500
-    font-size: 16px            
-    color: $request
-    margin-bottom: 1px
-    border-bottom: 1px solid $request
-    transition: 0.5s
-    &:hover
-        transition: 0.5s
-        border-bottom: 1px solid transparent
-        color: $request
+    &-content
+        margin-top: 50px
+    &-card
+        img
+            width: 100%
+        &-two
+            &-img
+                width: 12%
+                font-size: 42px
+                color: rgb(242, 242, 242)
+                text-align: right
+            &-item
+                display: flex
+                margin-bottom: 17px
+            &-description
+                padding: 10px 15px
+                background-color: rgb(242, 242, 242)
+                margin-left: 15px
+                width: 100%
+            &-title
+                font-size: 14px
+                text-transform: uppercase
+                line-height: 18px
+            &-text
+                font-size: 14px
+                color: #686868
+                line-height: 18px
+        &-form
+            background: url(../img/order/card3.png)
+            padding: 34px
+            display: flex
+            justify-content: center
+            flex-direction: column
+            &-title
+                text-align: center
+                font-size: 24px
+                color: #ffffff
+            form
+                input
+                    width: 100%
+                    height: 54px
+                    padding-left: 25px
+                    padding-bottom: 5px
+                    border: none
+                    border-radius: 27px
+                    background-color: #acbdcd
+                    margin-bottom: 25px
+                button
+                    width: 100%
+                    height: 54px
+                    border: none
+                    border-radius: 27px
+                    background-color: #6fbf00
+                    color: #dddfe2
+                    font-size: 16px
+                    margin-bottom: 5px
+            a
+                font-size: 24px
+                color: #dddfe2
+                margin: auto
+                display: flex
+                align-items: center
+                margin-top: 5px
+            &-policy
+                text-align: center
+                color: #dddfe2
+                font-size: 16px
+                max-width: 300px
+                display: inline
+                margin: auto
+                a
+                    color: #6fbf00
+                    font-size: 16px
+                    text-align: center
+                    margin: auto

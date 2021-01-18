@@ -21,7 +21,40 @@ button
         outline-style: none
         cursor: pointer
         filter: drop-shadow(0 4px 4px rgba(0,0,0,.35))
-.title
-    font-family: 'Montserrat', sans-serif
-    font-weight: 700
-    font-size: 31px
+.section
+    &-title
+        font-family: 'Nanum Gothic', sans-serif //испраить
+        font-weight: 800
+        font-size: 48px
+        text-align: center
+        color: $tabcolor
+    &-subtitle
+        font-family: 'Nanum Gothic', sans-serif //испраить
+        font-weight: 400
+        font-size: 24px
+        color: $tabcolor
+        text-align: center
+    &-icon
+        margin-top: 20px
+        text-align: center
+        position: relative
+        max-width: 300px
+        margin: auto 
+        &::before
+            content: ''
+            position: absolute
+            width: 100px
+            height: 2px
+            background-color: $slidegray
+            left: 5px
+            top: 15px
+        &::after
+            content: ''
+            position: absolute
+            width: 100px
+            height: 2px
+            background-color: $slidegray
+            right: 5px
+            top: 15px
+.col-20
+    width: 20%
