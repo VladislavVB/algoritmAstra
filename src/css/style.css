@@ -1975,6 +1975,77 @@ button:focus {
   padding-left: 25px;
 }
 
+.cupboard-content {
+  margin-bottom: 60px;
+}
+
+.cupboard-button {
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 29px;
+  background-color: #6fbf00;
+  color: #ffffff;
+  width: 457px;
+  height: 59px;
+  border: none;
+  font-family: 'Century Gothic Regular';
+}
+
+.photo {
+  padding-top: 50px;
+  background: url(../img/about/bgcup.png);
+}
+
+.photo-title {
+  font-family: 'Century Gothic Regular';
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  max-width: 710px;
+  margin-bottom: 36px;
+}
+
+.photo-card {
+  height: 150px;
+}
+
+.photo-plus img {
+  margin-top: 50px;
+}
+
+.photo-content {
+  margin-top: 30px;
+}
+
+.photo-button {
+  text-align: center;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 29px;
+  background-color: #6fbf00;
+  color: #ffffff;
+  width: 553px;
+  height: 59px;
+  border: none;
+  font-family: 'Century Gothic Regular';
+  margin-bottom: 70px;
+}
+
+.prodgect-content {
+  margin-top: 40px;
+  font-family: 'Century Gothic Regular';
+  background: url(../img/about/bg.png) no-repeat left bottom;
+  margin-bottom: 80px;
+  padding-bottom: 10px;
+}
+
+.prodgect-text {
+  margin-bottom: 15px;
+  font-family: 'Century Gothic Regular';
+  line-height: 21px;
+}
+
 @media screen and (max-width: 1623px) {
   .header-menu ul {
     min-width: 600px;
