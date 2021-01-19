@@ -357,6 +357,14 @@ template {
   font-display: wrap;
 }
 
+@font-face {
+  font-family: 'MicraDi';
+  src: url("../fonts/MicraDi.woff") format("woff"), url("../fonts/MicraDi.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
 a {
   text-decoration: none;
 }
@@ -366,6 +374,10 @@ a:hover {
   text-decoration: none;
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
           filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 button:focus {
@@ -493,7 +505,7 @@ button:focus {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-bottom: 5px solid transparent;
-  font-family: 'Century Gothic Regular', sans-serif;
+  font-family: 'MicraDi', sans-serif;
   font-size: 21px;
 }
 
@@ -520,7 +532,7 @@ button:focus {
   color: #555554;
   margin-left: 5px;
   padding-top: 3px;
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'MicraDi', sans-serif;
 }
 
 .header {
@@ -556,7 +568,7 @@ button:focus {
 }
 
 .header-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'MicraDi', sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #555554;
@@ -575,8 +587,8 @@ button:focus {
           transform: rotate(270deg);
   background-color: #576374;
   z-index: 900;
-  right: -94px;
-  top: 46%;
+  right: -140px;
+  top: 44%;
 }
 
 .calculation-content {
@@ -596,9 +608,9 @@ button:focus {
 }
 
 .calculation-content-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Century Gothic';
   font-weight: 500;
-  font-size: 14px;
+  font-size: 25px;
   margin-left: 11px;
   color: #ffffff;
 }
@@ -625,33 +637,53 @@ button:focus {
   background-color: #8cbf19;
 }
 
-.slide-content {
-  padding-top: 130px;
-}
-
 .slide-title {
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 58px;
+  font-family: 'Century Gothic';
+  font-size: 52px;
   font-weight: 700;
-  line-height: 58px;
+  line-height: 52px;
 }
 
 .slide-description {
   color: #efefef;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Century Gothic Regular';
   font-weight: 300;
-  font-size: 15px;
-  line-height: 21px;
+  font-size: 21px;
+  line-height: 30px;
   margin-top: 15px;
 }
 
 .slide-buttons {
-  max-width: 458px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 62px;
+  margin-top: 30px;
+}
+
+.slide-button {
+  width: 50%;
+  height: 54px;
+  border: none;
+  border-radius: 27px;
+  background-color: #6fbf00;
+  color: #dddfe2;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: 'Century Gothic Regular', sans-serif;
+}
+
+.slide-button-transparent {
+  text-decoration: underline;
+  width: 50%;
+  height: 54px;
+  border: none;
+  border-radius: 27px;
+  background-color: #6fbf0000;
+  color: #dddfe2;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
 .button-slide {
@@ -693,7 +725,7 @@ button:focus {
   background-color: #2a2a2a;
   color: #f2b33d;
   padding: 0px 8px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Century Gothic';
   font-size: 30px;
   line-height: 40px;
   font-weight: 700;
@@ -701,14 +733,65 @@ button:focus {
 
 .sale-title {
   color: #f2b33d;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Century Gothic';
   font-size: 48px;
   line-height: 64px;
   font-weight: 700;
 }
 
-.swiper-slide-bg {
-  background: url("../img/slider/slide-item.png") center;
+.slide-installment {
+  font-size: 27.09px;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Century Gothic Regular';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.slide {
+  height: 100%;
+}
+
+.slide-profitable {
+  color: #ffffff;
+  text-shadow: 0px 0px 20px #000000;
+  font-family: 'Century Gothic';
+  font-size: 46.25px;
+  text-transform: uppercase;
+  letter-spacing: 7.7px;
+}
+
+.swiper-slide-bg1 {
+  background: url("../img/slider/1.png") no-repeat center;
+  background-size: 100%;
+}
+
+.swiper-slide-bg2 {
+  background: url("../img/slider/2.png") no-repeat center;
+  background-size: 100%;
+}
+
+.swiper-slide-bg3 {
+  background: url("../img/slider/3.png") no-repeat center;
+  background-size: 100%;
+}
+
+.swiper-slide-bg4 {
+  background: url("../img/slider/4.png") no-repeat center;
+  background-size: 100%;
+}
+
+.swiper-slide-bg5 {
+  background: url("../img/slider/5.png") no-repeat center;
+  background-size: 100%;
+}
+
+.height100 {
+  height: 100%;
 }
 
 .advantages-content {
@@ -1016,9 +1099,9 @@ button:focus {
 .tabs-item {
   margin-right: 10px;
   margin-left: 10px;
-  padding: 2px 5px;
+  padding: 3px 7px;
   color: #2a2a2a;
-  font-family: 'Century Gothic Regular', sans-serif;
+  font-family: 'MicraDi';
   font-weight: 300;
   font-size: 16px;
   -webkit-transition: 0.5s;
@@ -1210,9 +1293,9 @@ button:focus {
 .cabinets-item {
   margin-right: 10px;
   margin-left: 10px;
-  padding: 2px 5px;
+  padding: 4px 8px;
   color: #2a2a2a;
-  font-family: 'Century Gothic Regular';
+  font-family: 'MicraDi';
   font-weight: 300;
   font-size: 16px;
   -webkit-transition: 0.5s;
@@ -1342,6 +1425,34 @@ button:focus {
   font-family: 'Century Gothic ', sans-serif;
 }
 
+.reviews-card {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+}
+
+.reviews-card-plus {
+  position: absolute;
+  background-color: #00000086;
+  width: 100%;
+  height: 100%;
+  top: -377px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews-card-plus img {
+  width: 37px !important;
+  height: 37px !important;
+}
+
 .reviews-form {
   max-width: 914px;
   margin: auto;
@@ -1381,6 +1492,18 @@ button:focus {
 
 .reviews-policy a {
   color: #8cbf19;
+}
+
+.reviews-slider-card {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+}
+
+.reviews-slider-card:hover .reviews-card-plus {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  top: 0px;
 }
 
 .reviews-slider-form {
@@ -1460,10 +1583,12 @@ button:focus {
 }
 
 .order-card-two-img {
+  font-family: 'MicraDi';
   width: 12%;
   font-size: 42px;
   color: #f2f2f2;
   text-align: right;
+  vertical-align: top;
 }
 
 .order-card-two-item {

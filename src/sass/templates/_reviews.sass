@@ -19,6 +19,22 @@
         margin: auto
         margin-bottom: 30px
         font-family: 'Century Gothic ', sans-serif
+    &-card
+        transition: 0.5s
+        position: relative
+        &-plus
+            position: absolute
+            background-color: #00000086
+            // opacity: 0.5
+            width: 100%
+            height: 100%
+            top: -377px //-377
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                width: 37px !important
+                height: 37px !important
     &-form
         max-width: 914px
         margin: auto
@@ -50,3 +66,14 @@
         font-family: 'Century Gothic Regular', sans-serif
         a 
             color: $green
+    &-slider
+        &-card
+            transition: 0.5s
+            position: relative
+                 
+            &:hover .reviews-card-plus
+                transition: 0.2s
+                top: 0px
+                
+                
+                
