@@ -1,4 +1,4 @@
-let swiper1 = new Swiper1('.swiper-container', {
+let swiper1 = new Swiper('.swiper-container', {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
@@ -12,7 +12,7 @@ let swiper1 = new Swiper1('.swiper-container', {
   },
 });
 
-let swiper2 = new Swiper2('.swiper-container-reviews', {
+let swiper2 = new Swiper('.swiper-container2', {
   slidesPerView: 4,
   spaceBetween: 30,
   pagination: {

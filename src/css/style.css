@@ -341,6 +341,22 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'Century Gothic Regular';
+  src: url("../fonts/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url("../fonts/CenturyGothic-Bold.woff") format("woff"), url("../fonts/CenturyGothic-Bold.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
 a {
   text-decoration: none;
 }
@@ -382,7 +398,7 @@ button:focus {
 }
 
 .section-title {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Century Gothic', sans-serif;
   font-weight: 800;
   font-size: 48px;
   text-align: center;
@@ -390,7 +406,7 @@ button:focus {
 }
 
 .section-subtitle {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Century Gothic Regular', sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: #2a2a2a;
@@ -476,6 +492,8 @@ button:focus {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-bottom: 5px solid transparent;
+  font-family: 'Century Gothic Regular', sans-serif;
+  font-size: 21px;
 }
 
 .menu-item:hover {
@@ -501,6 +519,7 @@ button:focus {
   color: #555554;
   margin-left: 5px;
   padding-top: 3px;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 .header {
@@ -517,6 +536,18 @@ button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.header-menu ul li {
+  list-style-type: none;
+  margin-right: 65px;
 }
 
 .header-title {
@@ -700,16 +731,32 @@ button:focus {
 }
 
 .advantages-card-title {
+  font-family: 'Century Gothic', sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
   font-size: 16px;
   margin-top: 25px;
-  height: 100%;
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .advantages-card-text {
+  font-family: 'Century Gothic Regular', sans-serif;
   margin-top: 5px;
+  height: 100%;
+}
+
+.advantages-card-text span {
+  font-family: 'Century Gothic', sans-serif;
 }
 
 .advantages-application {
@@ -730,6 +777,7 @@ button:focus {
   font-size: 30px;
   color: #dddfe2;
   margin-bottom: 30px;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 .advantages-application ul {
@@ -738,6 +786,8 @@ button:focus {
 
 .advantages-application li {
   color: #dddfe2;
+  font-family: 'Century Gothic Regular', sans-serif;
+  margin-top: 1px;
 }
 
 .advantages-application-form {
@@ -760,9 +810,11 @@ button:focus {
   background-color: #acbdcd;
   padding-left: 25px;
   padding-bottom: 4px;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
 .advantages-application-form-wraper button {
+  font-family: 'Century Gothic Regular', sans-serif;
   width: 307px;
   height: 54px;
   border-radius: 27px;
@@ -778,6 +830,7 @@ button:focus {
   font-size: 16px;
   color: #dddfe2;
   text-align: center;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
 .advantages-application-form-policy a {
@@ -997,7 +1050,7 @@ button:focus {
 }
 
 .kitchen-card {
-  height: 154px;
+  height: 350px;
   width: 100%;
   background-color: #555554;
   position: relative;
@@ -1277,6 +1330,7 @@ button:focus {
   max-width: 760px;
   margin: auto;
   margin-bottom: 30px;
+  font-family: 'Century Gothic ', sans-serif;
 }
 
 .reviews-form {
@@ -1293,6 +1347,7 @@ button:focus {
   background-color: #acbdcd;
   padding-left: 25px;
   padding-bottom: 4px;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
 .reviews-form button {
@@ -1304,6 +1359,7 @@ button:focus {
   color: #dddfe2;
   font-size: 16px;
   padding-bottom: 2px;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
 .reviews-policy {
@@ -1311,6 +1367,7 @@ button:focus {
   font-size: 16px;
   color: #dddfe2;
   text-align: center;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
 .reviews-policy a {
@@ -1333,12 +1390,56 @@ button:focus {
   color: #dddfe2;
   font-size: 16px;
   padding-bottom: 2px;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
 .reviews-slider-form-text {
   margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 16px;
   color: #dddfe2;
+  font-family: 'Century Gothic Regular', sans-serif;
+}
+
+.reviews-slider-form-text a {
+  text-align: center;
+  font-family: 'Century Gothic Regular', sans-serif;
+}
+
+.reviews-slider-form-policy {
+  margin-bottom: 5px;
+  text-decoration: underline;
+  margin-top: 5px;
+  color: #dddfe2;
+}
+
+.reviews-slider-form-policy img {
+  padding-right: 8px;
+}
+
+.reviews-slider-card {
+  width: 100%;
+  height: 372px;
+}
+
+.reviews-slider-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews-slider-card:hover {
+  background-color: rgba(0, 0, 0, 0.555);
+  z-index: 2;
+  height: 372px;
+  cursor: pointer;
+}
+
+.swiper-container2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .order-content {
@@ -1374,17 +1475,20 @@ button:focus {
   font-size: 14px;
   text-transform: uppercase;
   line-height: 18px;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 .order-card-two-text {
   font-size: 14px;
   color: #686868;
   line-height: 18px;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
 .order-card-form {
   background: url(../img/order/card3.png);
   padding: 34px;
+  padding-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1401,6 +1505,8 @@ button:focus {
   text-align: center;
   font-size: 24px;
   color: #ffffff;
+  font-family: 'Century Gothic ', sans-serif;
+  margin-bottom: 25px;
 }
 
 .order-card-form form input {
@@ -1411,7 +1517,8 @@ button:focus {
   border: none;
   border-radius: 27px;
   background-color: #acbdcd;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
 .order-card-form form button {
@@ -1423,6 +1530,7 @@ button:focus {
   color: #dddfe2;
   font-size: 16px;
   margin-bottom: 5px;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
 .order-card-form a {
@@ -1445,6 +1553,7 @@ button:focus {
   max-width: 300px;
   display: inline;
   margin: auto;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
 .order-card-form-policy a {
@@ -1531,16 +1640,16 @@ button:focus {
 }
 
 .footer-title {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 16px;
+  font-family: 'Century Gothic ', sans-serif;
 }
 
 .footer-description {
   margin-top: 50px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
 .footer-description-img {
@@ -1567,7 +1676,6 @@ button:focus {
 
 .footer-whatsapp-text {
   margin-left: 9px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
   border-bottom: 1px solid #12bc18;
@@ -1575,6 +1683,7 @@ button:focus {
   height: 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-family: 'Century Gothic Regular', sans-serif;
 }
 
 .footer-whatsapp-text:hover {
@@ -1588,12 +1697,12 @@ button:focus {
 }
 
 .footer-sub-copy {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Century Gothic Regular', sans-serif;
   font-size: 16px;
 }
 
 .footer-sub-confed {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Century Gothic Regular', sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #808080 !important;
