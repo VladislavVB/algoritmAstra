@@ -4,25 +4,25 @@ const buttomMobileMenu = document.querySelector('.btn_mobile');
       navigationMenu.classList.toggle('active');
 })
 
-//открытие модалки
-let openModal = () => {
-    document.querySelector('.modal-body ').classList.add('modal-body-active');
-}
+// //открытие модалки
+// let openModal = () => {
+//     document.querySelector('.modal-body ').classList.add('modal-body-active');
+// }
 
-let closeModal = () => {
-    document.querySelector('.modal-body ').classList.remove('modal-body-active');
+// let closeModal = () => {
+//     document.querySelector('.modal-body ').classList.remove('modal-body-active');
     
-}
+// }
 
-let closeModalBlack = (event) => {
-    console.log(event.target.classList);
-    if(event.target.classList.value.indexOf('form-element') != -1){
-        return;
-    }
+// let closeModalBlack = (event) => {
+//     console.log(event.target.classList);
+//     if(event.target.classList.value.indexOf('form-element') != -1){
+//         return;
+//     }
     
     
-    document.querySelector('.modal-body').classList.remove('modal-body-active');
-}
+//     document.querySelector('.modal-body').classList.remove('modal-body-active');
+// }
 
 //плавный переход
 const anchors = document.querySelectorAll('a[href*="#"]')

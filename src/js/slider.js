@@ -19,4 +19,18 @@ let swiper2 = new Swiper('.swiper-container2', {
     el: '.swiper-pagination2',
     clickable: true,
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    575: {
+        slidesPerView: 4,
+        spaceBetween: 30
+    },
+    100: {
+      slidesPerView: 2,
+      spaceBetween: 30
+  },
+  }
 });

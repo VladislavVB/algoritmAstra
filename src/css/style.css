@@ -2243,6 +2243,15 @@ button:focus {
 }
 
 @media screen and (max-width: 992px) {
+  .photo-card {
+    margin-bottom: 30px;
+  }
+  .reviews-card-plus {
+    height: 228px;
+  }
+  .reviews-slider-card:hover {
+    height: 228px;
+  }
   .col-20 {
     width: 50%;
   }
@@ -2338,6 +2347,381 @@ button:focus {
   }
   .reviews-slider-card {
     height: 228px;
+  }
+  .order-card-two-title {
+    font-size: 12px;
+  }
+  .order-card-two-text {
+    font-size: 12px;
+  }
+  .order-card-two-description {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .order-card-form {
+    margin-top: 60px;
+  }
+  .order-card-form-title {
+    font-size: 22px;
+  }
+  .order-card-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .order-card-form form input {
+    width: 90%;
+  }
+  .order-card-form form button {
+    width: 90%;
+  }
+  .order-card-form a {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+  }
+  .order-card-form-policy {
+    font-size: 16px;
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .menu-item {
+    font-size: 13px;
+  }
+  .header-number {
+    font-size: 10px;
+  }
+  .header-title {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .header-number {
+    margin-left: 0;
+  }
+  .header-menu ul {
+    min-width: 380px;
+    max-width: 390px;
+  }
+  .menu-item {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .meet-card {
+    margin-top: 15px;
+  }
+  .btn_mobile {
+    background-color: transparent;
+    border: none;
+    margin-right: 15px;
+    border-style: none;
+    outline: none;
+    z-index: 200;
+  }
+  .btn_mobile:focus {
+    border: none;
+    outline: none;
+  }
+  .menu-items {
+    border-bottom: 3px solid #8cbf19;
+    z-index: 10;
+    width: 100vw;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #555554;
+    top: 0;
+    bottom: 0;
+    height: 310px;
+    left: -150vw;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    text-align: center;
+  }
+  .menu-items.active {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    left: 0;
+  }
+  .desctop-logo {
+    display: block;
+  }
+  .mobile-logo {
+    display: none;
+  }
+  .advantages-application {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .advantages-application-img {
+    width: 150px;
+  }
+  .advantages-application-title {
+    font-size: 20px;
+  }
+  .advantages-application ul {
+    margin-bottom: 0;
+  }
+  .advantages-application li {
+    font-size: 12px;
+  }
+  .advantages-application form {
+    margin-top: 0px;
+  }
+  .advantages-application-form-wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advantages-application-form-wraper input {
+    height: 35px;
+    margin-top: 12px;
+    width: 100%;
+  }
+  .advantages-application-form-wraper button {
+    height: 35px;
+    margin-top: 12px;
+    width: 100%;
+  }
+  .kitchen-card {
+    height: 220px;
+  }
+  .kitchen-card-plus-content img {
+    margin-top: 90px;
+  }
+  .tabs-item {
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .cabinets-item {
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .cabinets-card {
+    height: 220px;
+  }
+  .cabinets-card-plus-content img {
+    margin-top: 90px;
+  }
+  .reviews-title {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .reviews-content img {
+    top: -80px;
+  }
+  .reviews-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews-form input {
+    width: 100%;
+    height: 35px;
+    margin-top: 12px;
+  }
+  .reviews-form button {
+    height: 35px;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .reviews-policy {
+    font-size: 14px;
+  }
+  .reviews-slider-card {
+    height: 150px;
+  }
+  .reviews-card-plus {
+    height: 150px;
+  }
+  .reviews-slider-card:hover {
+    height: 150px;
+  }
+  .reviews-slider-form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .reviews-slider-form-text {
+    font-size: 14px;
+  }
+  .reviews-slider-form button {
+    height: 35px;
+  }
+  .order-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .order-card img {
+    height: 300px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+  }
+  .order-card-two {
+    margin-top: 15px;
+  }
+  .order-card-two-img {
+    font-size: 30px;
+  }
+  .order-card-form {
+    margin-top: 15px;
+  }
+  .order-card-form form input {
+    height: 35px;
+  }
+  .order-card-form form button {
+    height: 35px;
+  }
+  .map-content {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .cupboard-button {
+    width: 100%;
+  }
+  .photo-button {
+    width: 100%;
+  }
+  .photo-card {
+    margin-bottom: 30px !important;
+  }
+  .advantages-application-img {
+    display: none;
+  }
+  .desctop-logo {
+    display: none;
+  }
+  .mobile-logo {
+    display: block;
+  }
+  .menu-sochial {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .menu-sochial a {
+    letter-spacing: -1px;
+  }
+  .reviews-content img {
+    display: none;
+  }
+  .reviews-content {
+    padding-top: 15px;
+  }
+  .reviews-card-plus {
+    height: 250px;
+  }
+  .reviews-slider-card {
+    height: 250px;
+  }
+  .reviews-slider-card:hover {
+    height: 250px;
+  }
+  .footer-description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .footer-description-img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .footer-whatsapp {
+    margin-top: 15px;
+  }
+  .footer-sub {
+    margin-top: 15px;
+  }
+  .advantages-application {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+  }
+  .dnone575 {
+    display: none;
+  }
+  .swiper-container {
+    height: 500px;
+  }
+  .kitchen {
+    margin-top: 0;
+  }
+  .kitchen-card {
+    width: 360px;
+    margin: auto;
+  }
+  .cabinets-card {
+    width: 360px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .reviews-card-plus {
+    height: 220px;
+  }
+  .reviews-slider-card {
+    height: 220px;
+  }
+  .reviews-slider-card:hover {
+    height: 220px;
+  }
+  .kitchen-card {
+    width: 100%;
+  }
+  .cabinets-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .dnone375 {
+    display: none;
+  }
+  .reviews-card-plus {
+    height: 200px;
+  }
+  .reviews-slider-card {
+    height: 200px;
+  }
+  .reviews-slider-card:hover {
+    height: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
