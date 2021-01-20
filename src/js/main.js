@@ -4,6 +4,11 @@ const buttomMobileMenu = document.querySelector('.btn_mobile');
       navigationMenu.classList.toggle('active');
 })
 
+const closeBurgerMenu = document.querySelector('.menu-items');
+   
+    closeBurgerMenu.addEventListener('click', () => {
+      closeBurgerMenu.classList.toggle('active');
+})
 // //открытие модалки
 // let openModal = () => {
 //     document.querySelector('.modal-body ').classList.add('modal-body-active');

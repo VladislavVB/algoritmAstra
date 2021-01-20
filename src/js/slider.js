@@ -20,8 +20,8 @@ let swiper2 = new Swiper('.swiper-container2', {
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next2',
+    prevEl: '.swiper-button-prev2',
   },
   breakpoints: {
     575: {

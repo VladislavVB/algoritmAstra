@@ -2,9 +2,9 @@
     .mobile-logo
         display: none
 @media screen and ( max-width: 1700px )
-    .header-menu ul
-        min-width: 700px
-        max-width: 710px
+    .menu-items, .header-menu ul
+        width: 700px
+        
 @media screen and ( max-width: 1440px )
     .display-none1200
         display: none
@@ -15,20 +15,22 @@
         font-size: 14px
     .menu-sochial a
         margin-right: 0
-    .header-menu ul
-        min-width: 580px
-        max-width: 620px
+    .menu-items, .header-menu ul
+        width: 600px
+        
 @media screen and ( max-width: 1200px )
     .menu-item
         padding: 25px 5px 20px
-    .header-menu ul
-        min-width: 463px
-        max-width: 500px
+    .menu-items
+        
+        width: 500px
     .reviews-form 
         display: flex
         justify-content: center
         input
             width: 200px
+    .menu-items, .header-menu ul
+        width: 500px
 @media screen and ( max-width: 1075px )
     .desctop-logo
         display: none
@@ -156,12 +158,12 @@
                     font-size: 16px
                     display: inline
 @media screen and ( max-width: 930px )
-    .menu
-        &-item
-            font-size: 13px
-    .header
-        &-number
-            font-size: 10px
+    // .menu
+    //     &-item
+    //         font-size: 13px
+    // .header
+    //     &-number
+    //         font-size: 10px
         &-title
             font-size: 12px
 @media screen and ( max-width: 830px )
@@ -170,11 +172,12 @@
             margin-left: 0
         &-menu
             ul
-                min-width: 380px
-                max-width: 390px
-    .menu
-        &-item
-            font-size: 11px
+                // min-width: 380px
+                // max-width: 390px
+                width: 390px
+    // .menu
+    //     &-item
+    //         font-size: 11px
 @media screen and ( max-width: 767px )  
     .meet-card
         margin-top: 15px
@@ -188,23 +191,33 @@
         &:focus
             border: none
             outline: none
-    .menu-items
+    .menu-items, .header-menu ul
+        position: fixed
         border-bottom: 3px solid $green
         z-index: 10
+        padding-top: 30px
+        padding-bottom: 30px
+       
         width: 100vw
-        position: fixed
         flex-direction: column
         background-color: $gray
         top: 0
         bottom: 0
-        height: 310px
+        height: 100vh
+
         
-        left: -150vw
+        left: -800px
         transition: 0.2s
         text-align: center
         &.active
             transition: 0.2s
             left: 0
+    .menu-item
+        color: $white
+        display: flex
+        align-content: space-around
+        &:hover
+            box-shadow: none
     .desctop-logo 
         display: block
     .mobile-logo 
