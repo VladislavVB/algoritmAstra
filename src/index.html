@@ -79,7 +79,7 @@
                     <div class="slide-installment">расскрочка на кухни 0%</div>
                     <div class="slide-profitable">это выгодно!</div>
                     <div class="slide-buttons">
-                      <button class="slide-button btn-green">Оставить заявку</button><button class="slide-button-transparent">Узнать стоимость</button>
+                      <button data-path="modal-application3" class="slide-button btn btn-green">Оставить заявку</button><button data-path="modal-application2" class="slide-button-transparent btn">Узнать стоимость</button>
                     </div>
                   </div>
                   
@@ -1400,26 +1400,89 @@
       </div>
     </div>
   </footer>
-  <!-- оставить заявку -->
-  <!-- <div class="modal"> -->
-    <div class="modal-application modal-application-active">
-      
-      <div class="modal-application-content">
-        <div class="modal-close"></div>
-        <div class="modal-application-img"><img src="img/modals/1.png" alt=""></div>
-        <div class="modal-application-description">
-          <div class="modal-application-title">Заказать обратный <br> звонок</div>
-          <form class="modal-application-form">
+  
+  <div class="modals">
+    <div class="modal-overlay">
+      <!-- оставить заявку -->
+      <div data-target="modal-application" class="modal modal-application">
+        
+        <div class="modal-application-content" data-target="modal-application">
+          <button class="modal-close"></button>
+          <div class="modal-application-img"><img src="img/modals/1.png" alt=""></div>
+          <div class="modal-application-description">
+            <div class="modal-application-title">Заказать обратный <br> звонок</div>
+            <form class="modal-application-form">
+              <input placeholder="имя" type="text">
+              <input placeholder="телефон" type="text">
+              <button class="btn-green">Оставить заявку</button>
+            </form>
+            <div class="modal-application-policy">нажимая кнопку вы даете согласие на <br> <a href="#">обработку персональных данных</a></div>
+          </div>
+        </div>
+      </div>
+      <div data-target="modal-application2" class="modal modal-review">
+        <div class="modal-review-content">
+          <button class="modal-close"></button>
+          <div class="section-title mt40">Оставить отзыв</div>
+          <div class="section-icon"><img src="img/section/section-icon.png" alt=""></div>
+          <div class="modal-review-policy">Вы можете оставить отзыв на нашем сайте или в What's App</div>
+          <div class="modal-review-policy-what"><a href="#" class="modal-review-policy-what-img">
+            <img src="img/footer/what.png" alt="">
+            <div class="modal-review-policy-what-text">Оставьте нам отзыв в What's App</div>
+          </a></div>
+          <form class="modal-review-form" action="#">
             <input placeholder="имя" type="text">
-            <input placeholder="телефон" type="text">
-            <button class="btn-green">Оставить заявку</button>
+            <input placeholder="e-mail" type="text">
+            <input placeholder="телефон (необязательно)" type="text">
+            <textarea name="#" placeholder="отзыв"></textarea>
+            <button class="btn-green">Оставить отзыв</button>
           </form>
-          <div class="modal-application-policy">нажимая кнопку вы даете согласие на <br> <a href="#">обработку персональных данных</a></div>
+        </div>
+      </div>
+      <div data-target="modal-application3" class="modal modal-card">
+        <div class="modal-card-content">
+          <button class="modal-close"></button>
+          <div class="modal-card-content-left"></div>
+          <div class="modal-card-content-right">
+            <div class="modal-card-title">К-001</div>
+            <div class="modal-card-text">
+              <div class="modal-card-text-description">
+                <div class="modal-card-text-title">
+                  <div class="modal-card-text-title-item">Стиль кухни:</div>
+                  <div class="modal-card-text-title-item">Модель кухни:</div>
+                  <div class="modal-card-text-title-item">размер кухни:</div>
+                  <div class="modal-card-text-title-item">проект реализован:</div>
+                  <div class="modal-card-text-title-item">дизайн проекта:</div>
+                </div>
+                <div class="modal-card-text-name">
+                  <div class="modal-card-text-name-item">современный стиль</div>
+                  <div class="modal-card-text-name-item">(автоматически проставляется)</div>
+                  <div class="modal-card-text-name-item">прямая кухня 4710мм, высота 2880мм.</div>
+                  <div class="modal-card-text-name-item">Краснодар, ЖК Ривера</div>
+                  <div class="modal-card-text-name-item">студии Astra</div>
+                </div>
+              </div>
+              <div class="modal-card-text-material">
+                <div class="modal-card-text-material-title">Материал:</div>
+                <div class="modal-card-text-material-text">- Фасады древесные МДФ в шпоне Woodstock файн-лайн дуб 500СМ с интегрированной ручкой</div>
+                <div class="modal-card-text-material-text">- Корпус ЛДСП Lamarty Каньон Ледяной со 100% оклейкой антиударной кромкой ПВХ со всех сторон; ДВП в паз - никаких гвоздей.
+                </div>
+                <div class="modal-card-text-material-text">- Корпус ЛДСП Lamarty Каньон Ледяной со 100% оклейкой антиударной кромкой ПВХ со всех сторон; ДВП в паз - никаких гвоздей.
+                </div>
+              </div>
+            </div>
+            <button class="btn-green modal-card-button">Узнать стоимость</button>
+            <div class="modal-card-policy">Свяжитесь с нами по телефону:</div>
+            <div class="modal-card-numbers">
+              <a href="tel: +79094703700" class="modal-card-number">+7 909 470 37 00</a>
+              <div class="modal-card-whats"><a href="#"><img src="img/footer/what.png" alt=""></a>Написать в WhatsApp</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  <!-- </div> -->
-  <!-- оставить заявку -->
+  </div>
+    
   <!-- конец footer -->
   <script src="https://api-maps.yandex.ru/2.1/?apikey=87e7849a-26f7-44b3-8657-693d9af784fa&lang=ru_RU"
     type="text/javascript"></script>
@@ -1429,6 +1492,7 @@
   <script src="js/cabinets.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/map.js"></script>
+  <script src="js/modals.js"></script>
   <script src="js/main.js"></script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

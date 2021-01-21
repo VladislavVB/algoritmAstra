@@ -1,35 +1,199 @@
 
-.modal
-    &-application
-       
-        position: fixed
-        z-index: 500
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        width: 100%
-        height: 100%
-        background-color: #020202c7
-        display: none
-        transition: 0.5s
-        &-content
-            position: fixed
-            width: 750px
-            height: 404px
-            background-color: #ffffff
-            z-index: 501
-            left: 0
-            bottom: 0
-            right: 0
-            margin: auto
-            vertical-align: middle
-            top: 48%                       
-            transform: translate(0, -52%)
-            display: flex
-        &-active.modal-application
-            display: block
+    
+.modal-overlay
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
 
+    background-color: rgba(0, 0, 0, 0.7)
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+    width: 100%
+    opacity: 0
+    visibility: hidden
+    transition: 0.3s
+    z-index: 500
+.modal
+    
+    width: 790px
+    height: 404px
+    display: flex
+    align-items: center
+    justify-content: center
+    display: none
+    z-index: 500
+    margin: auto
+
+.modal-overlay--visible
+    opacity: 1
+    visibility: visible
+    transition: all 0.3s ease-in-out
+
+.modal--visible
+    display: block
+
+.modal
+    &-card
+        width: 1140px
+        height: 639px
+        background-color: #fff
+        padding: 30px
+        &-policy
+            margin-top: 30px
+            font-family: 'Century Gothic Regular', sans-serif
+            font-size: 16px
+        &-numbers
+            display: flex
+        &-number
+            font-family: 'Century Gothic Regular', sans-serif
+            font-size: 24px
+            color: #000000
+            a
+                color: #000000
+                &:hover
+                    color: #000000
+        &-whats
+            margin-left: 50px
+            color: $green
+            font-family: 'Century Gothic Regular', sans-serif
+            font-size: 16px
+            text-decoration: underline
+            display: flex
+            align-items: center
+            img
+                margin-right: 10px
+        &-button
+            margin-top: 30px
+            width: 50%
+            height: 54px
+            border: none
+            border-radius: 27px
+            background-color: #6fbf00
+            color: #dddfe2
+            font-size: 18px
+            font-family: 'Century Gothic Regular', sans-serif
+        &-content
+            display: flex
+            &-left
+                width: 50%
+                background-color: #000000
+            &-right
+                width: 50%
+                padding-left: 30px
+        &-title
+            font-family: 'Century Gothic', sans-serif
+            font-size: 48px
+            color: #000000
+            &-item
+                margin-top: 5px
+        &-text
+            padding: 15px
+            border: 1px solid #c3c3c3
+            overflow-y: auto        
+            max-height: 340px
+            &-description
+                display: flex
+                
+            &-title
+                font-family: 'Century Gothic', sans-serif
+                font-size: 14px
+                text-transform: uppercase
+                padding-right: 20px
+                line-height: 21px
+            &-name
+                &-item
+                    font-family: 'Century Gothic Regular', sans-serif
+                    font-size: 14px
+                    line-height: 21px
+            &-material
+                margin-top: 15px
+                &-text
+                    margin-top: 10px
+                    font-family: 'Century Gothic Regular', sans-serif
+                    font-size: 14px
+                    color: #909090
+                &-title
+                    font-family: 'Century Gothic', sans-serif
+                    font-size: 14px
+                    text-transform: uppercase
+                    padding-right: 20px
+                    line-height: 21px
+
+
+    &-review
+        background-color: #fff
+        width: 662px
+        height: 670px
+        &-content
+            position: relative
+            padding-left: 50px
+            padding-right: 50px
+        &-form
+            display: flex
+            flex-direction: column
+            margin-top: 30px
+            input
+                width: 100%
+                height: 45px
+                
+                border: none
+                background-color: #ffffff
+                padding-left: 15px
+                
+                font-family: 'Century Gothic Regular', sans-serif
+                box-shadow: inset 0px 0px 4.95px 0.05px rgba(0, 0, 0, 0.18)
+                margin-bottom: 10px
+            textarea
+                width: 100%
+                height: 167px
+                border: none
+                background-color: #ffffff
+                padding: 15px
+                box-shadow: inset 0px 0px 4.95px 0.05px rgba(0, 0, 0, 0.18)
+            button
+                height: 54px
+                border: none
+                border-radius: 27px
+                background-color: #6fbf00
+                color: #dddfe2
+                font-size: 18px
+                margin-bottom: 5px
+                font-family: 'Century Gothic Regular', sans-serif
+                width: 85%
+                margin: auto
+                margin-top: 20px
+        &-policy
+            text-align: center
+            font-family: 'Century Gothic Regular'
+            margin-top: 10px
+            &-what
+                margin: auto
+                // text-align: center
+                // color: $green
+                width: 310px
+                margin-top: 8px
+                &-text
+                    margin-left: 15px
+                    color: $green
+                    text-decoration: underline
+                &-img
+                    display: flex
+                    
+                    margin: auto
+                    text-align: center
+
+    &-application
+        
+        &-content
+            position: relative
+            width: 750px
+            // height: 405px
+            background-color: #ffffff
+            display: flex
         &-description
             padding: 35px
             width: 100%
@@ -38,6 +202,11 @@
             font-size: 24px
             text-align: center
             line-height: 24px
+        &-policy
+            text-align: center
+            font-family: 'Century Gothic Regular', sans-serif
+            a
+                color: $green
         &-form
             display: flex
             flex-direction: column
@@ -66,106 +235,16 @@
                 margin: auto
                 margin-bottom: 40px
                 font-family: 'Century Gothic Regular', sans-serif
-        &-policy
-            text-align: center
-            font-family: 'Century Gothic Regular', sans-serif
-            a
-                color: $green
     &-close
         position: absolute
         background: url('../img/modals/cross.png')
         width: 20px
         height: 20px
         right: -38px
-    
-    
-    
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-// .modal-img-one
-//     opacity: 0
-//     visibility: hidden  
-//     position: fixed
-//     z-index: 199
-//     left: 0
-//     top: 
-//     bottom: 0
-//     right: 0
-//     display: flex
-//     align-items: center
-//     justify-content: center
-//     width: 100%
-//     height: 100%
-//     background-color: rgba(#000000, 0.6)
-//     z-index: 100
-//     &-visible
-        
-//         z-index: 99
-//         opacity: 1
-//         visibility: visible
-// .modal-img-one-close
-//     cursor: pointer
-// .modal-img-one-content
-//     width: 400px
-//     background-color: $gray
-//     padding: 10px
-//     border: 3px solid $green
-//     border-radius: 10px
-//     z-index: 200
-// .modal-img-one-content-img 
-//     width: 100%
-// .modal-img-one-content-description
-//     color: $darkwhite
-// .modal-close
-//     float: right
-//     margin-bottom: 3px
-//     transform: rotate(45deg)
+        z-index: 600
+        visibility: visible
+        display: block
+        border: none
 
-
-// .modal-body
-//     display: flex
-//     justify-content: center
-//     align-items: center
-//     position: fixed
-//     height: 100%
-//     width: 100%
-//     top: 0px
-//     z-index: -100
-//     background-color: rgba(#000000, 0.6)
-//     opacity: 0
-//     &-active
-//         z-index: 100
-//         opacity: 1
-// .questions-form
-    
-// .modal-input-close
-//     margin-left: 293px
-//     float: right
-//     transform: rotate(45deg)
-//     height: 30px
-//     width: 30px
-    
+.mt40
+    margin-top: 30px

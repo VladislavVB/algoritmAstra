@@ -1870,42 +1870,286 @@ button:focus {
   text-decoration: underline;
 }
 
-.modal-application {
+.modal-overlay {
   position: fixed;
-  z-index: 500;
-  top: 0;
   left: 0;
+  top: 0;
   right: 0;
   bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
   width: 100%;
-  height: 100%;
-  background-color: #020202c7;
-  display: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 500;
 }
 
-.modal-application-content {
-  position: fixed;
-  width: 750px;
+.modal {
+  width: 790px;
   height: 404px;
-  background-color: #ffffff;
-  z-index: 501;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+  z-index: 500;
   margin: auto;
-  vertical-align: middle;
-  top: 48%;
-  -webkit-transform: translate(0, -52%);
-          transform: translate(0, -52%);
+}
+
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal--visible {
+  display: block;
+}
+
+.modal-card {
+  width: 1140px;
+  height: 639px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.modal-card-policy {
+  margin-top: 30px;
+  font-family: 'Century Gothic Regular', sans-serif;
+  font-size: 16px;
+}
+
+.modal-card-numbers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.modal-application-active.modal-application {
-  display: block;
+.modal-card-number {
+  font-family: 'Century Gothic Regular', sans-serif;
+  font-size: 24px;
+  color: #000000;
+}
+
+.modal-card-number a {
+  color: #000000;
+}
+
+.modal-card-number a:hover {
+  color: #000000;
+}
+
+.modal-card-whats {
+  margin-left: 50px;
+  color: #8cbf19;
+  font-family: 'Century Gothic Regular', sans-serif;
+  font-size: 16px;
+  text-decoration: underline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-card-whats img {
+  margin-right: 10px;
+}
+
+.modal-card-button {
+  margin-top: 30px;
+  width: 50%;
+  height: 54px;
+  border: none;
+  border-radius: 27px;
+  background-color: #6fbf00;
+  color: #dddfe2;
+  font-size: 18px;
+  font-family: 'Century Gothic Regular', sans-serif;
+}
+
+.modal-card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-card-content-left {
+  width: 50%;
+  background-color: #000000;
+}
+
+.modal-card-content-right {
+  width: 50%;
+  padding-left: 30px;
+}
+
+.modal-card-title {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 48px;
+  color: #000000;
+}
+
+.modal-card-title-item {
+  margin-top: 5px;
+}
+
+.modal-card-text {
+  padding: 15px;
+  border: 1px solid #c3c3c3;
+  overflow-y: auto;
+  max-height: 340px;
+}
+
+.modal-card-text-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-card-text-title {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-right: 20px;
+  line-height: 21px;
+}
+
+.modal-card-text-name-item {
+  font-family: 'Century Gothic Regular', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.modal-card-text-material {
+  margin-top: 15px;
+}
+
+.modal-card-text-material-text {
+  margin-top: 10px;
+  font-family: 'Century Gothic Regular', sans-serif;
+  font-size: 14px;
+  color: #909090;
+}
+
+.modal-card-text-material-title {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-right: 20px;
+  line-height: 21px;
+}
+
+.modal-review {
+  background-color: #fff;
+  width: 662px;
+  height: 670px;
+}
+
+.modal-review-content {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.modal-review-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+.modal-review-form input {
+  width: 100%;
+  height: 45px;
+  border: none;
+  background-color: #ffffff;
+  padding-left: 15px;
+  font-family: 'Century Gothic Regular', sans-serif;
+  -webkit-box-shadow: inset 0px 0px 4.95px 0.05px rgba(0, 0, 0, 0.18);
+          box-shadow: inset 0px 0px 4.95px 0.05px rgba(0, 0, 0, 0.18);
+  margin-bottom: 10px;
+}
+
+.modal-review-form textarea {
+  width: 100%;
+  height: 167px;
+  border: none;
+  background-color: #ffffff;
+  padding: 15px;
+  -webkit-box-shadow: inset 0px 0px 4.95px 0.05px rgba(0, 0, 0, 0.18);
+          box-shadow: inset 0px 0px 4.95px 0.05px rgba(0, 0, 0, 0.18);
+}
+
+.modal-review-form button {
+  height: 54px;
+  border: none;
+  border-radius: 27px;
+  background-color: #6fbf00;
+  color: #dddfe2;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: 'Century Gothic Regular', sans-serif;
+  width: 85%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.modal-review-policy {
+  text-align: center;
+  font-family: 'Century Gothic Regular';
+  margin-top: 10px;
+}
+
+.modal-review-policy-what {
+  margin: auto;
+  width: 310px;
+  margin-top: 8px;
+}
+
+.modal-review-policy-what-text {
+  margin-left: 15px;
+  color: #8cbf19;
+  text-decoration: underline;
+}
+
+.modal-review-policy-what-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+
+.modal-application-content {
+  position: relative;
+  width: 750px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .modal-application-description {
@@ -1918,6 +2162,15 @@ button:focus {
   font-size: 24px;
   text-align: center;
   line-height: 24px;
+}
+
+.modal-application-policy {
+  text-align: center;
+  font-family: 'Century Gothic Regular', sans-serif;
+}
+
+.modal-application-policy a {
+  color: #8cbf19;
 }
 
 .modal-application-form {
@@ -1962,21 +2215,20 @@ button:focus {
   font-family: 'Century Gothic Regular', sans-serif;
 }
 
-.modal-application-policy {
-  text-align: center;
-  font-family: 'Century Gothic Regular', sans-serif;
-}
-
-.modal-application-policy a {
-  color: #8cbf19;
-}
-
 .modal-close {
   position: absolute;
   background: url("../img/modals/cross.png");
   width: 20px;
   height: 20px;
   right: -38px;
+  z-index: 600;
+  visibility: visible;
+  display: block;
+  border: none;
+}
+
+.mt40 {
+  margin-top: 30px;
 }
 
 .contacts-img {
