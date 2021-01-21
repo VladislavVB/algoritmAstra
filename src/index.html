@@ -29,9 +29,9 @@
       <ul class="menu-items">
         <li><a href="#start" class="menu-item">Главная</a></li>
         <li><a href="#kitchen" class="menu-item">Наши проекты</a></li>
-        <li><a href="#choose" class="menu-item">О нас</a></li>
-        <li><a href="" class="menu-item">Отзывы</a></li>
-        <li><a href="#footer" class="menu-item">Контакты</a></li>
+        <li><a href="about.html" class="menu-item">О нас</a></li>
+        <li><a href="#rewiews" class="menu-item">Отзывы</a></li>
+        <li><a href="contact.html" class="menu-item">Контакты</a></li>
       </ul>
 
       <div class="menu-sochial">
@@ -102,7 +102,7 @@
                     <div class="slide-title">Узнайте стоимость кухни в один клик и получите подарок</div>
 
                     <div class="slide-buttons">
-                      <button class="slide-button btn-green">Оставить заявку</button>
+                      <button data-path="modal-application" class="btn slide-button btn-green">Оставить заявку</button>
                     </div>
                   </div>
 
@@ -123,7 +123,7 @@
                     <div class="slide-title">Дизайнерские кухни и шкафы</div>
 
                     <div class="slide-buttons">
-                      <button class="slide-button btn-green">Узнать стоимость</button>
+                      <button data-path="modal-application" class="btn slide-button btn-green">Узнать стоимость</button>
                     </div>
                   </div>
 
@@ -144,7 +144,7 @@
                     <div class="slide-title">3D дизайн-проект в цвете бесплатно</div>
 
                     <div class="slide-buttons">
-                      <button class="slide-button btn-green">Подробнее</button>
+                      <button data-path="modal-application" class="btn slide-button btn-green">Подробнее</button>
                     </div>
                   </div>
 
@@ -165,7 +165,7 @@
                     <div class="slide-title">Кухни от <br> 100 000 рублей <br> за 30 дней</div>
 
                     <div class="slide-buttons">
-                      <button class="slide-button btn-green">Подробнее</button>
+                      <button data-path="modal-application" class="btn slide-button btn-green">Подробнее</button>
                     </div>
                   </div>
 
@@ -1329,7 +1329,7 @@
   </section>
   <section class="reviews-slider">
     <div class="container">
-      <div class="section-title">Отзывы</div>
+      <div id="rewiews" class="section-title">Отзывы</div>
       <div class="section-icon"><img src="img/section/section-icon.png" alt=""></div>
       <!-- slide -->
       <div class="swiper-container2">
@@ -1380,7 +1380,7 @@
 
       <!-- slide -->
       <div class="reviews-slider-form">
-        <button class="btn-green">Оставить отзыв</button>
+        <button data-path="modal-application2" class="btn btn-green">Оставить отзыв</button>
         <div class="reviews-slider-form-text">Еще больше отзывов в нашем инстаграм профиле</div>
         <a class="reviews-slider-form-policy" href="#"><img src="img/menu/inst.png" alt="">@astra_kuhni</a>
       </div>
@@ -1635,19 +1635,30 @@
             <div class="modal-card-text">
               <div class="modal-card-text-description">
                 <div class="modal-card-text-title">
-                  <div class="modal-card-text-title-item">Стиль кухни:</div>
-                  <div class="modal-card-text-title-item">Модель кухни:</div>
-                  <div class="modal-card-text-title-item">размер кухни:</div>
-                  <div class="modal-card-text-title-item">проект реализован:</div>
-                  <div class="modal-card-text-title-item">дизайн проекта:</div>
+                  <table>
+                    <tr>
+                        <td><div class="modal-card-text-title-item">Стиль кухни:</div></td>
+                        <td><div class="modal-card-text-name-item">современный стиль</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="modal-card-text-title-item">Модель кухни:</div></td>
+                        <td><div class="modal-card-text-name-item">(автоматически проставляется)</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="modal-card-text-title-item">размер кухни:</div></td>
+                        <td><div class="modal-card-text-name-item">прямая кухня 4710мм, высота 2880мм.</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="modal-card-text-title-item">проект реализован:</div></td>
+                        <td><div class="modal-card-text-name-item">Краснодар, ЖК Ривера</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="modal-card-text-title-item">дизайн проекта:</div></td>
+                        <td><div class="modal-card-text-name-item">студии Astra</div></td>
+                    </tr>
+                  </table>
                 </div>
-                <div class="modal-card-text-name">
-                  <div class="modal-card-text-name-item">современный стиль</div>
-                  <div class="modal-card-text-name-item">(автоматически проставляется)</div>
-                  <div class="modal-card-text-name-item">прямая кухня 4710мм, высота 2880мм.</div>
-                  <div class="modal-card-text-name-item">Краснодар, ЖК Ривера</div>
-                  <div class="modal-card-text-name-item">студии Astra</div>
-                </div>
+                  
               </div>
               <div class="modal-card-text-material">
                 <div class="modal-card-text-material-title">Материал:</div>

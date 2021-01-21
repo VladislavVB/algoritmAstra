@@ -27,11 +27,11 @@
       <a href="#start" class="mobile-logo  menu-logo"><img src="img/menu/logomb.png" alt=""></a>
 
       <ul class="menu-items">
-        <li><a href="#start" class="menu-item">Главная</a></li>
-        <li><a href="#kitchen" class="menu-item">Наши проекты</a></li>
-        <li><a href="#choose" class="menu-item">О нас</a></li>
-        <li><a href="" class="menu-item">Отзывы</a></li>
-        <li><a href="#footer" class="menu-item">Контакты</a></li>
+        <li><a href="index.html" class="menu-item">Главная</a></li>
+        <li><a href="kitchen.html" class="menu-item">Наши проекты</a></li>
+        <li><a href="about.html" class="menu-item">О нас</a></li>
+        <li><a href="index.html" class="menu-item">Отзывы</a></li>
+        <li><a href="about.html" class="menu-item">Контакты</a></li>
       </ul>
 
       <div class="menu-sochial">
@@ -58,7 +58,8 @@
       <div class="section-icon"><img src="img/section/section-icon.png" alt=""></div>
 
 
-      <div class="kitchen-content ">
+      <div class="kitchen-content">
+
         <div class="tabs-items text-center">
           <a onclick="onKitchetClick(0, event)" class="tabs-item tabs-item-active">Современный стиль</a>
           <a onclick="onKitchetClick(1, event)" class="tabs-item">Лофт</a>
@@ -67,8 +68,8 @@
           <a onclick="onKitchetClick(4, event)" class="tabs-item">Прованс</a>
         </div>
         <!-- 1 -->
-        <div id="kitchen-firstH" class="row kitchen-tab kitchen-card-active">
-          <a onclick="openModal_1()" class="col-sm-6 col-md-6 col-lg-4">
+        <div  id="kitchen-firstH" class="row kitchen-tab kitchen-card-active">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/1.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -79,8 +80,8 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_2()" class="col-sm-6 col-md-6 col-lg-4">
-            <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/2.png" alt="">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
+            <div  class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/2.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
                   <img src="img/kitchen-tabs/plus.png" alt="">
@@ -90,7 +91,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_3()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/3.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -101,7 +102,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_4()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/4.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -112,7 +113,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_5()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/5.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -123,7 +124,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_6()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/6.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -134,7 +135,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_7()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/7.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -145,7 +146,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_8()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/8.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -156,7 +157,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_8()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/9.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -171,19 +172,19 @@
         <!-- 1 -->
         <!-- 2 -->
         <div id="kitchen-secondH" class="row kitchen-tab ">
-          <a onclick="openModal_1()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/1.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
                   <img src="img/kitchen-tabs/plus.png" alt="">
                   <div class="kitchen-card-plus-text">скачать</div>
-                  <!-- если сделать а вместо  div все поедет  -->
+                  <!-- если сделать "а" вместо  "div" все поедет  -->
                 </div>
               </div>
             </div>
           </a>
-          <a onclick="openModal_2()" class="col-sm-6 col-md-6 col-lg-4">
-            <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/2.png" alt="">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
+            <div  class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/2.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
                   <img src="img/kitchen-tabs/plus.png" alt="">
@@ -193,7 +194,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_3()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/3.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -204,7 +205,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_4()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/4.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -215,7 +216,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_5()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/5.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -226,7 +227,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_6()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/6.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -237,7 +238,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_7()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/7.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -248,8 +249,19 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_8()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/8.png" alt="">
+              <div class="kitchen-card-plus">
+                <div class="kitchen-card-plus-content">
+                  <img src="img/kitchen-tabs/plus.png" alt="">
+                  <div class="kitchen-card-plus-text">скачать</div>
+                  <!-- если сделать а вместо  div все поедет  -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
+            <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/9.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
                   <img src="img/kitchen-tabs/plus.png" alt="">
@@ -263,19 +275,19 @@
         <!-- 2 -->
         <!-- 3 -->
         <div id="kitchen-threeH" class="row kitchen-tab ">
-          <a onclick="openModal_1()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/1.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
                   <img src="img/kitchen-tabs/plus.png" alt="">
                   <div class="kitchen-card-plus-text">скачать</div>
-                  <!-- если сделать а вместо  div все поедет  -->
+                  <!-- если сделать "а" вместо  "div" все поедет  -->
                 </div>
               </div>
             </div>
           </a>
-          <a onclick="openModal_2()" class="col-sm-6 col-md-6 col-lg-4">
-            <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/2.png" alt="">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
+            <div  class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/2.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
                   <img src="img/kitchen-tabs/plus.png" alt="">
@@ -285,7 +297,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_3()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/3.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -296,7 +308,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_4()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/4.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -307,7 +319,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_5()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/5.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -318,7 +330,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_6()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/6.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -329,7 +341,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_7()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/7.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -340,8 +352,19 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_8()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/8.png" alt="">
+              <div class="kitchen-card-plus">
+                <div class="kitchen-card-plus-content">
+                  <img src="img/kitchen-tabs/plus.png" alt="">
+                  <div class="kitchen-card-plus-text">скачать</div>
+                  <!-- если сделать а вместо  div все поедет  -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
+            <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/9.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
                   <img src="img/kitchen-tabs/plus.png" alt="">
@@ -355,19 +378,19 @@
         <!-- 3 -->
         <!-- 4 -->
         <div id="kitchen-fourH" class="row kitchen-tab">
-          <a onclick="openModal_1()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/1.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
                   <img src="img/kitchen-tabs/plus.png" alt="">
                   <div class="kitchen-card-plus-text">скачать</div>
-                  <!-- если сделать а вместо  div все поедет  -->
+                  <!-- если сделать "а" вместо  "div" все поедет  -->
                 </div>
               </div>
             </div>
           </a>
-          <a onclick="openModal_2()" class="col-sm-6 col-md-6 col-lg-4">
-            <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/2.png" alt="">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
+            <div  class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/2.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
                   <img src="img/kitchen-tabs/plus.png" alt="">
@@ -377,7 +400,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_3()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/3.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -388,7 +411,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_4()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/4.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -399,7 +422,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_5()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/5.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -410,7 +433,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_6()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/6.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -421,7 +444,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_7()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/7.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -432,8 +455,19 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_8()" class="col-sm-6 col-md-6 col-lg-4">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/8.png" alt="">
+              <div class="kitchen-card-plus">
+                <div class="kitchen-card-plus-content">
+                  <img src="img/kitchen-tabs/plus.png" alt="">
+                  <div class="kitchen-card-plus-text">скачать</div>
+                  <!-- если сделать а вместо  div все поедет  -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
+            <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/9.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
                   <img src="img/kitchen-tabs/plus.png" alt="">
@@ -447,8 +481,8 @@
         <!-- 4 -->
         <!-- 5 -->
         <div id="kitchen-fiveH" class="row kitchen-tab ">
-          <a onclick="openModal_1()" class="col-sm-6 col-md-6 col-lg-3">
-            <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/1.png" alt="">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
+            <div  class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/1.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
                   <img src="img/kitchen-tabs/plus.png" alt="">
@@ -458,8 +492,8 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_2()" class="col-sm-6 col-md-6 col-lg-3">
-            <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/2.png" alt="">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
+            <div  class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/2.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
                   <img src="img/kitchen-tabs/plus.png" alt="">
@@ -469,7 +503,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_3()" class="col-sm-6 col-md-6 col-lg-3">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/3.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -480,7 +514,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_4()" class="col-sm-6 col-md-6 col-lg-3">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/4.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -491,7 +525,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_5()" class="col-sm-6 col-md-6 col-lg-3">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/5.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -502,7 +536,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_6()" class="col-sm-6 col-md-6 col-lg-3">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/6.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -513,7 +547,7 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_7()" class="col-sm-6 col-md-6 col-lg-3">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/7.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
@@ -524,8 +558,19 @@
               </div>
             </div>
           </a>
-          <a onclick="openModal_8()" class="col-sm-6 col-md-6 col-lg-3">
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
             <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/8.png" alt="">
+              <div class="kitchen-card-plus">
+                <div class="kitchen-card-plus-content">
+                  <img src="img/kitchen-tabs/plus.png" alt="">
+                  <div class="kitchen-card-plus-text">скачать</div>
+                  <!-- если сделать а вместо  div все поедет  -->
+                </div>
+              </div>
+            </div>
+          </a>
+          <a data-path="modal-application3" class="btn col-sm-6 col-md-6 col-lg-4">
+            <div class="kitchen-card"><img class="kitchen-img" src="img/kitchen-tabs/9.png" alt="">
               <div class="kitchen-card-plus">
                 <div class="kitchen-card-plus-content">
                   <img src="img/kitchen-tabs/plus.png" alt="">
@@ -537,7 +582,6 @@
           </a>
         </div>
         <!-- 5 -->
-        <button class="cupboard-button btn-green">Смотреть еще</button>
       </div>
 
     </div>
@@ -548,7 +592,7 @@
         в нашем instagram профиле @astra_kuhni</div>
       <div class="section-icon"><img src="img/section/section-icon.png" alt=""></div>
       <div class="photo-content row">
-        <a onclick="openModal_6()" class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <a class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="cabinets-card photo-card"><img class="cabinets-img" src="img/kitchen-tabs/6.png" alt="">
             <div class="cabinets-card-plus">
               <div class="cabinets-card-plus-content photo-plus">
@@ -559,7 +603,7 @@
             </div>
           </div>
         </a>
-        <a onclick="openModal_6()" class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <a class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="cabinets-card photo-card"><img class="cabinets-img" src="img/kitchen-tabs/6.png" alt="">
             <div class="cabinets-card-plus">
               <div class="cabinets-card-plus-content photo-plus">
@@ -570,7 +614,7 @@
             </div>
           </div>
         </a>
-        <a onclick="openModal_6()" class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <a class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="cabinets-card photo-card"><img class="cabinets-img" src="img/kitchen-tabs/6.png" alt="">
             <div class="cabinets-card-plus">
               <div class="cabinets-card-plus-conten photo-plus">
@@ -581,7 +625,7 @@
             </div>
           </div>
         </a>
-        <a onclick="openModal_6()" class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <a  class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="cabinets-card photo-card"><img class="cabinets-img" src="img/kitchen-tabs/6.png" alt="">
             <div class="cabinets-card-plus">
               <div class="cabinets-card-plus-content photo-plus">
@@ -592,7 +636,7 @@
             </div>
           </div>
         </a>
-        <button class="photo-button btn-green">Заказать проект и расчет мебели</button>
+        <button data-path="modal-application" class="btn photo-button btn-green">Заказать проект и расчет мебели</button>
       </div>
 
     </div>
@@ -669,6 +713,168 @@
       </div>
     </div>
   </footer>
+
+  <div class="modals">
+    <div class="modal-overlay">
+      <!-- оставить заявку -->
+      <div data-target="modal-application" class="modal modal-application">
+
+        <div class="modal-application-content" data-target="modal-application">
+          <button class="modal-close"></button>
+          <div class="modal-application-img"><img src="img/modals/1.png" alt=""></div>
+          <div class="modal-application-description">
+            <div class="modal-application-title">Заказать обратный <br> звонок</div>
+            <form class="modal-application-form">
+              <input placeholder="имя" type="text">
+              <input placeholder="телефон" type="text">
+              <button class="btn-green">Оставить заявку</button>
+            </form>
+            <div class="modal-application-policy">нажимая кнопку вы даете согласие на <br> <a href="#">обработку
+                персональных данных</a></div>
+          </div>
+        </div>
+      </div>
+      <div data-target="modal-application2" class="modal modal-review">
+        <div class="modal-review-content">
+          <button class="modal-close"></button>
+          <div class="section-title mt40">Оставить отзыв</div>
+          <div class="section-icon"><img src="img/section/section-icon.png" alt=""></div>
+          <div class="modal-review-policy">Вы можете оставить отзыв на нашем сайте или в What's App</div>
+          <div class="modal-review-policy-what"><a href="#" class="modal-review-policy-what-img">
+              <img src="img/footer/what.png" alt="">
+              <div class="modal-review-policy-what-text">Оставьте нам отзыв в What's App</div>
+            </a></div>
+          <form class="modal-review-form" action="#">
+            <input placeholder="имя" type="text">
+            <input placeholder="e-mail" type="text">
+            <input placeholder="телефон (необязательно)" type="text">
+            <textarea name="#" placeholder="отзыв"></textarea>
+            <button class="btn-green">Оставить отзыв</button>
+          </form>
+        </div>
+      </div>
+      <div data-target="modal-application3" class="modal modal-card">
+        <div class="modal-card-content">
+          <button class="modal-close"></button>
+          <div class="modal-card-content-left">
+            <div class="modal-card-content-left-big-img"><img src="img/slider/2.1.png" alt=""></div>
+            <div class="modal-card-content-left-sm">
+              <div class="modal-card-content-left-sm-img"><img src="img/slider/2.1.png" alt=""></div>
+              <div class="modal-card-content-left-sm-img"><img src="img/slider/2.1.png" alt=""></div>
+              <div class="modal-card-content-left-sm-img"><img src="img/slider/2.1.png" alt=""></div>
+            </div>
+            <!-- <div class="swiper-container gallery-top">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-1.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-2.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-4.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-5.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-6.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-7.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-8.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-9.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-10.jpg)">
+                </div>
+              </div>
+              
+              <div class="swiper-button-next swiper-button-white"></div>
+              <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-1.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-2.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-4.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-5.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-6.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-7.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-8.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-9.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-10.jpg)">
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+
+          <div class="modal-card-content-right">
+            <div class="modal-card-title">К-001</div>
+            <div class="modal-card-text">
+              <div class="modal-card-text-description">
+                <div class="modal-card-text-title">
+                  <table>
+                    <tr>
+                        <td><div class="modal-card-text-title-item">Стиль кухни:</div></td>
+                        <td><div class="modal-card-text-name-item">современный стиль</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="modal-card-text-title-item">Модель кухни:</div></td>
+                        <td><div class="modal-card-text-name-item">(автоматически проставляется)</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="modal-card-text-title-item">размер кухни:</div></td>
+                        <td><div class="modal-card-text-name-item">прямая кухня 4710мм, высота 2880мм.</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="modal-card-text-title-item">проект реализован:</div></td>
+                        <td><div class="modal-card-text-name-item">Краснодар, ЖК Ривера</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="modal-card-text-title-item">дизайн проекта:</div></td>
+                        <td><div class="modal-card-text-name-item">студии Astra</div></td>
+                    </tr>
+                  </table>
+                </div>
+                  
+              </div>
+              <div class="modal-card-text-material">
+                <div class="modal-card-text-material-title">Материал:</div>
+                <div class="modal-card-text-material-text">- Фасады древесные МДФ в шпоне Woodstock файн-лайн дуб 500СМ
+                  с
+                  интегрированной ручкой</div>
+                <div class="modal-card-text-material-text">- Корпус ЛДСП Lamarty Каньон Ледяной со 100% оклейкой
+                  антиударной
+                  кромкой ПВХ со всех сторон; ДВП в паз - никаких гвоздей.
+                </div>
+                <div class="modal-card-text-material-text">- Корпус ЛДСП Lamarty Каньон Ледяной со 100% оклейкой
+                  антиударной
+                  кромкой ПВХ со всех сторон; ДВП в паз - никаких гвоздей.
+                </div>
+              </div>
+            </div>
+            <button data-path="modal-application" class="btn-green modal-card-button">Узнать стоимость</button>
+            <div class="modal-card-policy">Свяжитесь с нами по телефону:</div>
+            <div class="modal-card-numbers">
+              <a href="tel: +79094703700" class="modal-card-number">+7 909 470 37 00</a>
+              <div class="modal-card-whats"><a href="#"><img src="img/footer/what.png" alt=""></a>Написать в WhatsApp
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- конец footer -->
   <script src="https://api-maps.yandex.ru/2.1/?apikey=87e7849a-26f7-44b3-8657-693d9af784fa&lang=ru_RU"
     type="text/javascript"></script>
@@ -678,6 +884,7 @@
   <script src="js/cabinets.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/map.js"></script>
+  <script src="js/modals.js"></script>
   <script src="js/main.js"></script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
