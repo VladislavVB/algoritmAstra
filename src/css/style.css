@@ -621,33 +621,42 @@ button:focus {
   position: fixed;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
-  background-color: #576374;
-  z-index: 900;
-  right: -140px;
-  top: 44%;
+  background-color: #8cbf19;
+  z-index: 400;
+  right: -91px;
+  top: 53%;
+  -webkit-box-shadow: inset 5px 0px rgba(10, 10, 10, 0.315), 0px 1px 1px rgba(0, 0, 0, 0.322);
+          box-shadow: inset 5px 0px rgba(10, 10, 10, 0.315), 0px 1px 1px rgba(0, 0, 0, 0.322);
 }
 
 .calculation-content {
-  padding: 10px 30px;
+  padding: 0px 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .calculation-content img {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  margin-right: 20px;
+  margin-right: 0px;
+  margin-top: 8px;
+  height: 43px;
+  margin-bottom: 8px;
 }
 
 .calculation-content-text {
-  font-family: 'Century Gothic';
+  font-family: 'Century Gothic Regular';
   font-weight: 500;
-  font-size: 25px;
-  margin-left: 11px;
+  font-size: 18px;
+  margin-bottom: 6px;
+  margin-left: 10px;
   color: #ffffff;
 }
 
@@ -1236,6 +1245,20 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.button-tabs-more {
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 29px;
+  background-color: #6fbf00;
+  color: #ffffff;
+  width: 457px;
+  height: 59px;
+  border: none;
+  font-family: 'Century Gothic Regular';
 }
 
 .consultation {
@@ -1927,6 +1950,10 @@ button:focus {
   display: block;
 }
 
+.modal {
+  overflow: visible;
+}
+
 .modal-card {
   width: 1140px;
   height: 639px;
@@ -2258,8 +2285,8 @@ button:focus {
   background: url("../img/modals/cross.png");
   width: 20px;
   height: 20px;
-  right: 3px;
-  top: 3px;
+  right: -38px;
+  top: 0px;
   z-index: 600;
   visibility: visible;
   display: block;
@@ -2506,6 +2533,46 @@ button:focus {
   margin-bottom: 15px;
   font-family: 'Century Gothic Regular';
   line-height: 21px;
+}
+
+.cupboard-card-hidden1 {
+  display: none;
+}
+
+.cupboard-card-hidden2 {
+  display: none;
+}
+
+.cupboard-card-hidden3 {
+  display: none;
+}
+
+.cupboard-card-hidden4 {
+  display: none;
+}
+
+.cupboard-card-hidden5 {
+  display: none;
+}
+
+.cupboard-card-hidden-visible1 {
+  display: block;
+}
+
+.cupboard-card-hidden-visible2 {
+  display: block;
+}
+
+.cupboard-card-hidden-visible3 {
+  display: block;
+}
+
+.cupboard-card-hidden-visible4 {
+  display: block;
+}
+
+.cupboard-card-hidden-visible5 {
+  display: block;
 }
 
 @media screen and (max-width: 4000px) {
@@ -3042,6 +3109,9 @@ button:focus {
   }
   .map-content {
     height: 400px;
+  }
+  .d-none767 {
+    display: none;
   }
 }
 
