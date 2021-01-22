@@ -1261,6 +1261,46 @@ button:focus {
   font-family: 'Century Gothic Regular';
 }
 
+.kitchen-card-hidden1 {
+  display: none;
+}
+
+.kitchen-card-hidden2 {
+  display: none;
+}
+
+.kitchen-card-hidden3 {
+  display: none;
+}
+
+.kitchen-card-hidden4 {
+  display: none;
+}
+
+.kitchen-card-hidden5 {
+  display: none;
+}
+
+.kitchen-card-hidden-visible1 {
+  display: block;
+}
+
+.kitchen-card-hidden-visible2 {
+  display: block;
+}
+
+.kitchen-card-hidden-visible3 {
+  display: block;
+}
+
+.kitchen-card-hidden-visible4 {
+  display: block;
+}
+
+.kitchen-card-hidden-visible5 {
+  display: block;
+}
+
 .consultation {
   min-height: 130px;
   background: #566375 url("../img/consultation/bg.png");

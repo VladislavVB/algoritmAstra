@@ -10,26 +10,46 @@ closeBurgerMenu.addEventListener('click', () => {
   closeBurgerMenu.classList.toggle('active');
 })
 
-//смотреть еще
-let cupboardHiddenAllBtn = (num) => {
-  document.querySelector(`.button-tabs-more${num}`);
-
-}
-
+//смотреть еще cupboard
+// let cupboardHiddenAllBtn = (num) => {
+//   document.querySelector(`.button-tabs-more${num}`);
+// }
 let cupboardHiddenAll = (num) => {
+  console.log(document.querySelectorAll(`.cupboard-card-hidden${num}`));
   if (document.querySelectorAll(`.cupboard-card-hidden${num}`).length > 0) {
     document.querySelectorAll(`.cupboard-card-hidden${num}`).forEach(elem => {
       elem.classList.remove(`cupboard-card-hidden${num}`);
     })
+    document.querySelector(`.button-tabs-more${num}`).innerHTML='Закрыть';
   } else {
-    document.querySelectorAll(`cupboard-card-hidden-visible${num}`).forEach(elem => {
+    document.querySelectorAll(`.card-cabinets-visible-now${num}`).forEach(elem => {
+      console.log(elem);
       elem.classList.add(`cupboard-card-hidden${num}`);
+      document.querySelector(`.button-tabs-more${num}`).innerHTML='Смотреть еще';
     })
   }
-
-
 }
 
+//смотреть еще kitchen
+// let kitchenHiddenAllBtn = (num) => {
+//   document.querySelector(`.button-kitchen-tabs-more${num}`);
+// }
+let kitchenHiddenAll = (num) => {
+  console.log(document.querySelectorAll(`.kitchen-card-hidden${num}`));
+  if (document.querySelectorAll(`.kitchen-card-hidden${num}`).length > 0) {
+    document.querySelectorAll(`.kitchen-card-hidden${num}`).forEach(elem => {
+      console.log(elem);
+      elem.classList.remove(`kitchen-card-hidden${num}`);
+    })
+    document.querySelector(`.button-kitchen-tabs-more${num}`).innerHTML='Закрыть';
+  } else {
+    document.querySelectorAll(`.card-kitchen-visible-now${num}`).forEach(elem => {
+      console.log(elem);
+      elem.classList.add(`kitchen-card-hidden${num}`);
+      document.querySelector(`.button-kitchen-tabs-more${num}`).innerHTML='Смотреть еще';
+    })
+  }
+}
 
 
 //плавный переход
