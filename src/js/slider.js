@@ -13,6 +13,9 @@ let swiper1 = new Swiper('.swiper-container', {
 });
 
 let swiper2 = new Swiper('.swiper-container2', {
+  autoplay: {
+    delay: 5000,
+  },
   slidesPerView: 4,
   spaceBetween: 30,
   pagination: {
@@ -31,10 +34,23 @@ let swiper2 = new Swiper('.swiper-container2', {
     100: {
       slidesPerView: 2,
       spaceBetween: 30
-    },
-    autoplay: {
-      delay: 5,
     }
+  }
+});
+
+let galleryThumbs3 = new Swiper('.gallery-thumbs3', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+
+let galleryTop3 = new Swiper('.gallery-top3', {
+  spaceBetween: 10,
+  
+  thumbs: {
+    swiper: galleryThumbs
   }
 });
 
