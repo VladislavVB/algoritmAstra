@@ -38,14 +38,14 @@ let swiper2 = new Swiper('.swiper-container2', {
   }
 });
 
-var galleryThumbs = new Swiper('.gallery-thumbs', {
+let galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 10,
   slidesPerView: 3,
   freeMode: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
 });
-var galleryTop = new Swiper('.gallery-top', {
+let galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 10,
   thumbs: {
     swiper: galleryThumbs
