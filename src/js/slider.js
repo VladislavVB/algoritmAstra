@@ -1,6 +1,6 @@
 let swiper1 = new Swiper('.swiper-container', {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 0,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
@@ -38,36 +38,17 @@ let swiper2 = new Swiper('.swiper-container2', {
   }
 });
 
-let galleryThumbs3 = new Swiper('.gallery-thumbs3', {
+var galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 10,
-  slidesPerView: 4,
+  slidesPerView: 3,
   freeMode: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
 });
-
-let galleryTop3 = new Swiper('.gallery-top3', {
+var galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 10,
-  
   thumbs: {
     swiper: galleryThumbs
   }
 });
 
-// var galleryThumbs = new Swiper('.gallery-thumbs', {
-//   spaceBetween: 10,
-//   slidesPerView: 4,
-//   freeMode: true,
-//   watchSlidesVisibility: true,
-//   watchSlidesProgress: true,
-// });
-// var galleryTop = new Swiper('.gallery-top', {
-//   spaceBetween: 10,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   thumbs: {
-//     swiper: galleryThumbs
-//   }
-// });

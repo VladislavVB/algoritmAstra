@@ -23,7 +23,6 @@ const picturesSlide = (action) => {
 			currentPath++;
 		break;
 		case 'prev':
-			console.log(document.querySelector('.reviews-show-img').src);
 			if (currentPath === 0) {
 				currentPath = picturesPath.length;
 			}
@@ -41,10 +40,11 @@ btns.forEach((el, i) => {
 		modals.forEach((el) => {
 			el.classList.remove('modal--visible');
 		});
-		console.log(i);
-		// currentPath = i-100+1;
+
 		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
 		modalOverlay.classList.add('modal-overlay--visible');
+		document.querySelector('body').style.overflow='hidden';
+		
 	});
 });
 
@@ -53,6 +53,7 @@ let closeModals = () => {
 	modals.forEach((el) => {
 		el.classList.remove('modal--visible');
 	});
+	document.querySelector('body').style.overflow='auto';
 }
 
 

@@ -49,6 +49,7 @@
         display: block
 .modal
     overflow: visible
+    
     &-card
         width: 1140px
         height: 639px
@@ -249,12 +250,14 @@
             // &-next
             //     position: absolute
             //     right: -50px
+            //     transform: rotate(180deg)
             // &-prev
             //     position: absolute
             //     left: 0
 
 
     &-application
+        
         &-img
             img
                 height: 100%
@@ -325,13 +328,19 @@
         position: absolute
         right: -50px
         color: $white
-        top: 50%
+        top: 47%
+
+        border: none
+        background-color: transparent
+        transform: rotate(180deg)
 .modal-aplication4-photos
     &-prev
+        border: none
         position: absolute
         left: -50px
         color: $white
-        top: 50%
+        top: 47%
+        background-color: transparent
 .swiper-container3
     height: 80%
     width: 100%
@@ -341,37 +350,32 @@
     width: 100%
     overflow: hidden
     margin-top: 30px
-
-.gallery-top3
-    height: 75%
-.gallery-thumbs3
-    height: 25%
-    margin-top: 30px
-// .swiper-container3 
-//   width: 100%
-//   height: 150px
-//   margin-left: auto
-//   margin-right: auto
-// // .swiper-slide 
-// //   background-size: cover
-// //   background-position: center
-
-// .gallery-top 
-//   height: 80%
-//   width: 100%
-
-// .gallery-thumbs 
-//   height: 20%
-//   box-sizing: border-box
-//   padding: 10px 0
-
-// .gallery-thumbs .swiper-slide 
-//   width: 33.3%
-//   height: 100%
-//   opacity: 0.4
-
-// .gallery-thumbs .swiper-slide-thumb-active 
-//   opacity: 1
-
 .mt40
     margin-top: 0px
+
+
+
+.swiper-slide 
+    background-size: cover
+    background-position: center
+    
+
+.gallery-top 
+    height: 80%
+    width: 100%
+
+
+.gallery-thumbs 
+    height: 20%
+    box-sizing: border-box
+    padding: 10px 0
+
+
+.gallery-thumbs .swiper-slide 
+    width: 25%
+    height: 100%
+    opacity: 0.4
+
+
+.gallery-thumbs .swiper-slide-thumb-active 
+    opacity: 1

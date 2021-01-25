@@ -2401,14 +2401,20 @@ button:focus {
   position: absolute;
   right: -50px;
   color: #ffffff;
-  top: 50%;
+  top: 47%;
+  border: none;
+  background-color: transparent;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .modal-aplication4-photos-prev {
+  border: none;
   position: absolute;
   left: -50px;
   color: #ffffff;
-  top: 50%;
+  top: 47%;
+  background-color: transparent;
 }
 
 .swiper-container3 {
@@ -2424,17 +2430,35 @@ button:focus {
   margin-top: 30px;
 }
 
-.gallery-top3 {
-  height: 75%;
-}
-
-.gallery-thumbs3 {
-  height: 25%;
-  margin-top: 30px;
-}
-
 .mt40 {
   margin-top: 0px;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-top {
+  height: 80%;
+  width: 100%;
+}
+
+.gallery-thumbs {
+  height: 20%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
 }
 
 .contacts-img {
