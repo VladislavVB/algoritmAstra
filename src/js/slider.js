@@ -31,7 +31,10 @@ let swiper2 = new Swiper('.swiper-container2', {
     100: {
       slidesPerView: 2,
       spaceBetween: 30
-  },
+    },
+    autoplay: {
+      delay: 5,
+    }
   }
 });
 
